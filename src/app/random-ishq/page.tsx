@@ -58,7 +58,7 @@ export default function RandomIshqPage() {
             onClick={() => setFilter(f.key)}
             aria-pressed={filter === f.key}
             className={
-              "rounded-full px-4 py-2 font-body text-[14px] italic transition-all duration-300 " +
+              "rounded-sm px-4 py-2 font-body text-[14px] italic transition-all duration-300 " +
               (filter === f.key ? "text-chamber-950" : "text-ivory-400 hover:text-gilt-200")
             }
             style={

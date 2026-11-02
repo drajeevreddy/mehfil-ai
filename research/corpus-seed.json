@@ -1,0 +1,251 @@
+[
+  {
+    "slug": "dam-mast-qalandar",
+    "verifiedTitle": "Dam Dam Mast Qalandar",
+    "alternateTitles": ["Dama Dam Mast Qalandar", "Dum Mast Qalandar"],
+    "language": "Punjabi-Sindhi-Urdu",
+    "poeticTradition": "hamd-manqabat, traditional qawwali",
+    "attributedPoet": null,
+    "yearsRecorded": "widely recorded across NFAK's career; OSA Vol. 9",
+    "interpretation": {
+      "emotionalSummary": "SAMPLE ANNOTATION — An invocation of ecstatic surrender to the Qalandar spirit: transport, abandon, and devotion offered without negotiation.",
+      "dominantEmotions": ["devotion", "madness"],
+      "emotionalProgression": ["devotion", "madness", "surrender"],
+      "sufiConcepts": ["ishq-e-haqiqi", "fana", "qalandariyya"],
+      "symbolicImagery": ["saaqi", "maikhana", "aag"],
+      "literaryCharacteristics": ["hymnic repetition", "invocation", "rhythmic acceleration"]
+    },
+    "researchStatus": "verified_metadata",
+    "annotationStatus": "sample_annotation",
+    "confidence": "medium",
+    "coverageNote": "Metadata verified against Wikipedia Nusrat Fateh Ali Khan discography (OSA Vol. 9). Interpretive layer is a labeled sample annotation pending editorial review.",
+    "sources": [
+      {"label": "Wikipedia — Nusrat Fateh Ali Khan discography", "url": "https://en.wikipedia.org/wiki/Nusrat_Fateh_Ali_Khan_discography", "kind": "metadata"}
+    ],
+    "attributionNote": "Composer attribution is publicly debated; no attribution is asserted here."
+  },
+  {
+    "slug": "sanson-ki-mala",
+    "verifiedTitle": "Sanson Ki Mala",
+    "alternateTitles": ["Saanson Ki Mala", "Sanso Ki Mala Pe Simroon"],
+    "language": "Urdu",
+    "poeticTradition": "manqabat / devotional poetry",
+    "attributedPoet": null,
+    "yearsRecorded": "OSA Vol. 28",
+    "interpretation": {
+      "emotionalSummary": "SAMPLE ANNOTATION — Remembering the Divine name like a garland strung on breath: devotion as a practice so intimate it reorders the body.",
+      "dominantEmotions": ["devotion", "spiritualLonging"],
+      "emotionalProgression": ["devotion", "spiritualLonging", "surrender"],
+      "sufiConcepts": ["zikr", "ishq-e-haqiqi", "tasawwuf"],
+      "symbolicImagery": ["dua", "noor", "rooh"],
+      "literaryCharacteristics": ["breath-rhythm diction", "japa-like repetition", "the body and the prayer become one"]
+    },
+    "researchStatus": "verified_metadata",
+    "annotationStatus": "sample_annotation",
+    "confidence": "medium",
+    "coverageNote": "Metadata verified against Wikipedia Nusrat Fateh Ali Khan discography (OSA Vol. 28). Interpretive layer is a labeled sample annotation pending editorial review.",
+    "sources": [
+      {"label": "Wikipedia — Nusrat Fateh Ali Khan discography", "url": "https://en.wikipedia.org/wiki/Nusrat_Fateh_Ali_Khan_discography", "kind": "metadata"}
+    ]
+  },
+  {
+    "slug": "tere-bin-nahin-lagda",
+    "verifiedTitle": "Tere Bin Nahin Lagda",
+    "alternateTitles": ["Tere Bin Nahi Lagda", "Tere Bin Nahin Lagdah"],
+    "language": "Punjabi",
+    "poeticTradition": "ghazal-style barham (kafi tradition)",
+    "attributedPoet": null,
+    "yearsRecorded": "documented in NFAK's recorded catalog",
+    "interpretation": {
+      "emotionalSummary": "SAMPLE ANNOTATION — The ordinary world loses its weight in the beloved's absence: day-to-day life continues but nothing fits anymore.",
+      "dominantEmotions": ["hijr", "dard"],
+      "emotionalProgression": ["hijr", "dard", "sabr"],
+      "sufiConcepts": ["hijr", "ghurbat"],
+      "symbolicImagery": ["raat", "tanhai", "aansu"],
+      "literaryCharacteristics": ["plain diction carrying grief", "repetition", "domestic imagery"]
+    },
+    "researchStatus": "verified_metadata",
+    "annotationStatus": "sample_annotation",
+    "confidence": "medium",
+    "coverageNote": "Metadata verified against Wikipedia Nusrat Fateh Ali Khan discography. Interpretive layer is a labeled sample annotation pending editorial review.",
+    "sources": [
+      {"label": "Wikipedia — Nusrat Fateh Ali Khan discography", "url": "https://en.wikipedia.org/wiki/Nusrat_Fateh_Ali_Khan_discography", "kind": "metadata"}
+    ]
+  },
+  {
+    "slug": "allah-hoo",
+    "verifiedTitle": "Allah Hoo",
+    "alternateTitles": ["Allah Hu", "Allah Hu Allah Hu"],
+    "language": "Urdu-Arabic",
+    "poeticTradition": "hamd, traditional qawwali",
+    "attributedPoet": null,
+    "yearsRecorded": "OSA Vol. 25; Saregama 2004",
+    "interpretation": {
+      "emotionalSummary": "SAMPLE ANNOTATION — The Divine Name as breath and heartbeat: a dhikr that strips the self away until only the Name remains.",
+      "dominantEmotions": ["devotion", "surrender"],
+      "emotionalProgression": ["devotion", "spiritualLonging", "surrender"],
+      "sufiConcepts": ["zikr", "noor", "ishq-e-haqiqi"],
+      "symbolicImagery": ["noor", "dua", "sajda"],
+      "literaryCharacteristics": ["repetition as spiritual practice", "ecstatic invocation", "breath-rhythm"]
+    },
+    "researchStatus": "verified_metadata",
+    "annotationStatus": "sample_annotation",
+    "confidence": "medium",
+    "coverageNote": "Metadata verified against Wikipedia discography (OSA Vol. 25; Saregama 2004 release). Interpretive layer is a labeled sample annotation.",
+    "sources": [
+      {"label": "Wikipedia — Nusrat Fateh Ali Khan discography", "url": "https://en.wikipedia.org/wiki/Nusrat_Fateh_Ali_Khan_discography", "kind": "metadata"}
+    ]
+  },
+  {
+    "slug": "haq-ali-ali",
+    "verifiedTitle": "Haq Ali Ali",
+    "alternateTitles": ["Haq Ali Ali", "Haq Ali"],
+    "language": "Punjabi-Urdu",
+    "poeticTradition": "manqabat / devotional poetry",
+    "attributedPoet": null,
+    "yearsRecorded": "OSA Vol. 126",
+    "interpretation": {
+      "emotionalSummary": "SAMPLE ANNOTATION — Praise for Ali with restrained sargam: devotion held in quiet intensity rather than ecstatic release.",
+      "dominantEmotions": ["devotion", "wafa"],
+      "emotionalProgression": ["devotion", "wafa", "sabr"],
+      "sufiConcepts": ["ishq-e-haqiqi", "tasawwuf"],
+      "symbolicImagery": ["rooh", "sajda", "dua"],
+      "literaryCharacteristics": ["restrained sargam improvisation", "devotional address", "measured pacing"]
+    },
+    "researchStatus": "verified_metadata",
+    "annotationStatus": "sample_annotation",
+    "confidence": "medium",
+    "coverageNote": "Metadata verified against Wikipedia discography (OSA Vol. 126). Interpretive layer is a labeled sample annotation.",
+    "sources": [
+      {"label": "Wikipedia — Nusrat Fateh Ali Khan discography", "url": "https://en.wikipedia.org/wiki/Nusrat_Fateh_Ali_Khan_discography", "kind": "metadata"}
+    ]
+  },
+  {
+    "slug": "afreen-afreen",
+    "verifiedTitle": "Afreen Afreen",
+    "alternateTitles": ["Afreen Afreen"],
+    "language": "Urdu",
+    "poeticTradition": "ghazal-qawwali",
+    "attributedPoet": null,
+    "yearsRecorded": "documented in NFAK's recorded catalog",
+    "interpretation": {
+      "emotionalSummary": "SAMPLE ANNOTATION — Adoration of the beloved's beauty as an act of worship: the gaze itself becomes devotion.",
+      "dominantEmotions": ["ishq", "longing"],
+      "emotionalProgression": ["ishq", "longing", "devotion"],
+      "sufiConcepts": ["ishq-e-majazi", "ishq-e-haqiqi"],
+      "symbolicImagery": ["chand", "raat", "noor"],
+      "literaryCharacteristics": ["ghazal diction", "tashbih (simile)", "romantic-spiritual ambiguity"]
+    },
+    "researchStatus": "verified_metadata",
+    "annotationStatus": "sample_annotation",
+    "confidence": "medium",
+    "coverageNote": "Metadata verified against Wikipedia discography. Interpretive layer is a labeled sample annotation pending editorial review.",
+    "sources": [
+      {"label": "Wikipedia — Nusrat Fateh Ali Khan discography", "url": "https://en.wikipedia.org/wiki/Nusrat_Fateh_Ali_Khan_discography", "kind": "metadata"}
+    ]
+  },
+  {
+    "slug": "mere-rashke-qamar",
+    "verifiedTitle": "Mere Rashke Qamar",
+    "alternateTitles": ["Mere Rashke Qamar"],
+    "language": "Urdu",
+    "poeticTradition": "ghazal-qawwali",
+    "attributedPoet": "Fana Bulandshahri (lyrics), composed by NFAK",
+    "yearsRecorded": "documented in NFAK's recorded catalog",
+    "interpretation": {
+      "emotionalSummary": "SAMPLE ANNOTATION — A ghazal-qawwali in which the beloved's beauty eclipses the moon: longing held as reverence, not complaint.",
+      "dominantEmotions": ["ishq", "longing"],
+      "emotionalProgression": ["ishq", "longing", "nostalgia"],
+      "sufiConcepts": ["ishq-e-majazi", "noor"],
+      "symbolicImagery": ["chand", "noor", "raat"],
+      "literaryCharacteristics": ["ghazal diction", "tashbih", "reverent tone"]
+    },
+    "researchStatus": "verified_metadata",
+    "annotationStatus": "sample_annotation",
+    "confidence": "medium",
+    "coverageNote": "Lyricist attribution per Wikipedia biography (Fana Bulandshahri). Metadata verified against Wikipedia discography. Interpretive layer is a labeled sample annotation.",
+    "sources": [
+      {"label": "Wikipedia — Nusrat Fateh Ali Khan", "url": "https://en.wikipedia.org/wiki/Nusrat_Fateh_Ali_Khan", "kind": "metadata"},
+      {"label": "Wikipedia — Nusrat Fateh Ali Khan discography", "url": "https://en.wikipedia.org/wiki/Nusrat_Fateh_Ali_Khan_discography", "kind": "metadata"}
+    ],
+    "attributionNote": "Lyrics attributed to Fana Bulandshahri; music composed by Nusrat Fateh Ali Khan."
+  },
+  {
+    "slug": "meri-piya-ghar-aaya",
+    "verifiedTitle": "Mera Piya Ghar Aaya",
+    "alternateTitles": ["Mera Piya Ghar Aaya"],
+    "language": "Punjabi",
+    "poeticTradition": "kafi / traditional qawwali",
+    "attributedPoet": "Bulleh Shah (lyrics), composed by NFAK",
+    "yearsRecorded": "OSA Vol. 36",
+    "interpretation": {
+      "emotionalSummary": "SAMPLE ANNOTATION — The beloved's return as homecoming: joy threaded through the pain of separation that preceded it.",
+      "dominantEmotions": ["hope", "ishq", "hijr"],
+      "emotionalProgression": ["hijr", "hope", "ishq"],
+      "sufiConcepts": ["visal", "ishq-e-majazi"],
+      "symbolicImagery": ["ghar", "raasta", "manzil"],
+      "literaryCharacteristics": ["kafi refrain structure", "domestic imagery", "narrative return"]
+    },
+    "researchStatus": "verified_metadata",
+    "annotationStatus": "sample_annotation",
+    "confidence": "medium",
+    "coverageNote": "Metadata verified against Wikipedia discography (OSA Vol. 36). Interpretive layer is a labeled sample annotation pending editorial review.",
+    "sources": [
+      {"label": "Wikipedia — Nusrat Fateh Ali Khan", "url": "https://en.wikipedia.org/wiki/Nusrat_Fateh_Ali_Khan", "kind": "metadata"},
+      {"label": "Wikipedia — Nusrat Fateh Ali Khan discography", "url": "https://en.wikipedia.org/wiki/Nusrat_Fateh_Ali_Khan_discography", "kind": "metadata"}
+    ],
+    "attributionNote": "Lyrics attributed to Bulleh Shah; music composed by Nusrat Fateh Ali Khan."
+  },
+  {
+    "slug": "tum-ek-gorakh-dhanda-ho",
+    "verifiedTitle": "Tum Ek Gorakh Dhanda Ho",
+    "alternateTitles": ["Tum Ek Gorakh Dhanda Ho"],
+    "language": "Urdu",
+    "poeticTradition": "ghazal-qawwali",
+    "attributedPoet": "Naz Khialvi (lyrics), composed by NFAK",
+    "yearsRecorded": "documented in NFAK's recorded catalog",
+    "interpretation": {
+      "emotionalSummary": "SAMPLE ANNOTATION — The beloved as an insoluble mystery: devotion reframed as philosophical inquiry, not resolution.",
+      "dominantEmotions": ["longing", "spiritualLonging"],
+      "emotionalProgression": ["longing", "spiritualLonging", "surrender"],
+      "sufiConcepts": ["taqdir", "ghurbat"],
+      "symbolicImagery": ["kismat", "raasta", "dil"],
+      "literaryCharacteristics": ["philosophical diction", "rhetorical questioning", "mystery as theme"]
+    },
+    "researchStatus": "verified_metadata",
+    "annotationStatus": "sample_annotation",
+    "confidence": "medium",
+    "coverageNote": "Metadata verified against Wikipedia biography. Interpretive layer is a labeled sample annotation pending editorial review.",
+    "sources": [
+      {"label": "Wikipedia — Nusrat Fateh Ali Khan", "url": "https://en.wikipedia.org/wiki/Nusrat_Fateh_Ali_Khan", "kind": "metadata"},
+      {"label": "Wikipedia — Nusrat Fateh Ali Khan discography", "url": "https://en.wikipedia.org/wiki/Nusrat_Fateh_Ali_Khan_discography", "kind": "metadata"}
+    ],
+    "attributionNote": "Lyrics attributed to Naz Khialvi; music composed by Nusrat Fateh Ali Khan."
+  },
+  {
+    "slug": "man-atkeya-beparwah-de-naal",
+    "verifiedTitle": "Man Atkeya Beparwah De Naal",
+    "alternateTitles": ["Man Atkeya Beparwah De Naal"],
+    "language": "Punjabi",
+    "poeticTradition": "kafi / traditional qawwali",
+    "attributedPoet": "Shah Hussain (lyrics), composed by NFAK",
+    "yearsRecorded": "documented in NFAK's recorded catalog",
+    "interpretation": {
+      "emotionalSummary": "SAMPLE ANNOTATION — The carefree wayfarer: ecstatic abandonment of worldly care in devotion to the Divine.",
+      "dominantEmotions": ["madness", "devotion", "junoon"],
+      "emotionalProgression": ["junoon", "madness", "surrender"],
+      "sufiConcepts": ["fana", "qalandariyya", "ishq-e-haqiqi"],
+      "symbolicImagery": ["aag", "zanjeer", "raasta"],
+      "literaryCharacteristics": ["kafi refrain", "ecstatic diction", "abandonment motif"]
+    },
+    "researchStatus": "verified_metadata",
+    "annotationStatus": "sample_annotation",
+    "confidence": "medium",
+    "coverageNote": "Metadata verified against Wikipedia biography. Interpretive layer is a labeled sample annotation pending editorial review.",
+    "sources": [
+      {"label": "Wikipedia — Nusrat Fateh Ali Khan", "url": "https://en.wikipedia.org/wiki/Nusrat_Fateh_Ali_Khan", "kind": "metadata"},
+      {"label": "Wikipedia — Nusrat Fateh Ali Khan discography", "url": "https://en.wikipedia.org/wiki/Nusrat_Fateh_Ali_Khan_discography", "kind": "metadata"}
+    ],
+    "attributionNote": "Lyrics attributed to Shah Hussain; music composed by Nusrat Fateh Ali Khan."
+  }
+]

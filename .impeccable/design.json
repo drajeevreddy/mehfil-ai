@@ -1,18 +1,18 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-11-02T22:55:00Z",
+  "generatedAt": "2026-11-02T23:15:00Z",
   "title": "Design System: MEHFIL AI",
   "extensions": {
     "colorMeta": {
-      "chamber-black": { "role": "neutral-bg", "displayName": "Chamber Black", "canonical": "#0b0a0d", "tonalRamp": ["#070608", "#0b0a0d", "#120f11", "#1a1618", "#252024", "#383034", "#514850", "#766d73"] },
-      "chamber-well": { "role": "neutral-surface", "displayName": "Chamber Well", "canonical": "#14110f", "tonalRamp": ["#0d0b0a", "#14110f", "#1c1815", "#262019", "#332b22", "#453b31", "#5d5245", "#7e7365"] },
-      "velvet-chadar": { "role": "secondary", "displayName": "Velvet Chadar", "canonical": "#4a1220", "tonalRamp": ["#2d0a14", "#4a1220", "#5d1a2a", "#75233a", "#8e3450", "#a94e6b", "#c07c92", "#d8a8ba"] },
+      "chamber-black": { "role": "neutral-bg", "displayName": "Chamber Black", "canonical": "#070608", "tonalRamp": ["#030204", "#070608", "#0e0c0e", "#1a1618", "#2a2428", "#3e363c", "#5c4e54", "#8a7c82"] },
+      "chamber-well": { "role": "neutral-surface", "displayName": "Chamber Well", "canonical": "#0b0a0d", "tonalRamp": ["#070608", "#0b0a0d", "#14110f", "#1c1815", "#262019", "#383034", "#5c4e54", "#8a7c82"] },
+      "velvet-chadar": { "role": "secondary", "displayName": "Velvet Chadar", "canonical": "#4a1220", "tonalRamp": ["#2d0a14", "#3b0e1a", "#4a1220", "#5d1a2a", "#75233a", "#8e3450", "#a94e6b", "#c07c92"] },
       "gilt-brass": { "role": "primary", "displayName": "Gilt Brass", "canonical": "#c8a25e", "tonalRamp": ["#8a6a45", "#a5824f", "#c8a25e", "#dcc084", "#e8cd93", "#f2e0b6", "#f7ebd2", "#fbf4e6"] },
       "gilt-dim": { "role": "primary-muted", "displayName": "Gilt Dim (Bronze)", "canonical": "#8a6a45", "tonalRamp": ["#5e4630", "#75552f", "#8a6a45", "#a5824f", "#b8a078", "#cbb894", "#dcd0b2", "#ece6d4"] },
-      "ivory-body": { "role": "neutral-fg", "displayName": "Ivory Body", "canonical": "#e7dcc6", "tonalRamp": ["#b8a88d", "#c9bca4", "#d9cbb2", "#e7dcc6", "#f2e8d5", "#f7f0e2", "#faf4ea", "#fdf9f3"] },
+      "ivory-body": { "role": "neutral-fg", "displayName": "Ivory Body", "canonical": "#e7dcc6", "tonalRamp": ["#b8a88d", "#c9bcb4", "#d9cbb2", "#e7dcc6", "#f2e8d5", "#f7f0e2", "#faf4ea", "#fdf9f3"] },
       "ivory-muted": { "role": "neutral-fg-2", "displayName": "Ivory Muted", "canonical": "#b8a88d", "tonalRamp": ["#8a8070", "#a1957f", "#b8a88d", "#cbbfa8", "#dccfbc", "#e9ded0", "#f2e9e0", "#f8f1ea"] },
       "petal-rose": { "role": "accent-soft", "displayName": "Petal Rose", "canonical": "#b5606a", "tonalRamp": ["#6e3a40", "#8c4852", "#b5606a", "#c97f86", "#d99aa0", "#e6b4b8", "#efd0d2", "#f7e5e6"] },
-      "lamp-glow": { "role": "light", "displayName": "Lamp Glow", "canonical": "#d99a3d", "tonalRamp": ["#8a5a1e", "#b07a2c", "#d99a3d", "#edb85f", "#f2cd82", "#f6dd9f", "#f9e8bd", "#fcf2d9"] }
+      "lamp-500": { "role": "light", "displayName": "Lamp Glow", "canonical": "#d99a3d", "tonalRamp": ["#8a5a1e", "#b07a2c", "#d99a3d", "#edb85f", "#f2cd82", "#f6dd9f", "#f9e8bd", "#fcf2d9"] }
     },
     "typographyMeta": {
       "display": { "displayName": "Plaque Display", "purpose": "Engraved capitals: nameplates, page titles, buttons. Always tracked 0.14em+, never lowercase." },
@@ -22,7 +22,7 @@
       "devanagari": { "displayName": "Devanagari Display", "purpose": "The Hindi/Devanagari hero headline, weight 600." }
     },
     "shadows": [
-      { "name": "alcove-depth", "value": "inset 0 0 56px rgba(0,0,0,0.75), 0 24px 60px -24px rgba(0,0,0,0.9)", "purpose": "The recess a finished poem lives in." },
+      { "name": "alcove-depth", "value": "inset 0 0 56px rgba(0,0,0,0.75), 0 24px 60px -24px rgba(0,0,0,0.9)", "purpose": "The recess a poem lives in." },
       { "name": "niche-well", "value": "inset 0 0 0 1px rgba(200,162,94,0.16), inset 0 2px 8px rgba(0,0,0,0.6)", "purpose": "Controls and cards at rest." },
       { "name": "plaque-relief", "value": "inset 0 1px 0 rgba(232,205,147,0.35), 0 10px 24px -12px rgba(0,0,0,0.8)", "purpose": "Brass relief under plaques." },
       { "name": "ignition-glow", "value": "0 0 32px -10px rgba(217,154,61,0.35)", "purpose": "The hover/active light response." },
@@ -61,7 +61,7 @@
       "name": "Mirror Chip (selected)",
       "kind": "chip",
       "refersTo": "emotion-chip-selected",
-      "description": "Emotion tile; floods gilt when selected, frosted well at rest (second entry).",
+      "description": "Emotion tile; floods gilt when selected, frosted well at rest.",
       "html": "<button class=\"ds-chip\">ISHQ</button>",
       "css": ".ds-chip{display:inline-flex;align-items:center;padding:8px 16px;border:none;border-radius:3px;background:linear-gradient(180deg,rgba(28,24,21,.85),rgba(16,13,12,.9));color:#e7dcc6;font-family:Cinzel,serif;font-size:12px;letter-spacing:.14em;text-transform:uppercase;box-shadow:inset 0 0 0 1px rgba(200,162,94,.2),inset 0 2px 8px rgba(0,0,0,.5);cursor:pointer;transition:all .4s cubic-bezier(.22,1,.36,1)}.ds-chip:hover{color:#e8cd93}.ds-chip[data-selected=true]{background:linear-gradient(180deg,#e8cd93,#c8a25e 60%,#8a6a45);color:#0b0a0d;box-shadow:0 0 0 1px rgba(242,224,182,.75),0 0 26px -6px rgba(217,154,61,.55)}.ds-chip:focus-visible{outline:2px solid #dcc084;outline-offset:2px}"
     },
@@ -109,7 +109,7 @@
       "Roman Urdu typography rides EB Garamond; Urdu script always Nastaliq with deep leading."
     ],
     "rules": [
-      { "name": "The Brass-Never-Blue Rule", "body": "Every interactive affordance the browser would paint blue or white — focus rings, selection, caret, scrollbars, underline accents — is dressed in gilt. Blue never appears.", "section": "colors" },
+      { "name": "The Brass-Never-Blue Rule", "body": "Every interactive affordance the browser would paint blue or white — focus rings, selection, carets and scrollbars, underline accents — is dressed in gilt (#dcc084 rings, gilt-thumbed scrollbars, gilt-dim underlines). Blue never appears.", "section": "colors" },
       { "name": "The One Lit Alcove Rule", "body": "Only one poem at a time holds the light; the alcove's rim and mirror tiles brighten while it works and settle when it rests.", "section": "colors" },
       { "name": "The Ledger Voice Rule", "body": "Anything that states provenance, status, or research honesty is set in Courier Prime small caps — it reads as an entry in a record book, not UI chrome.", "section": "typography" },
       { "name": "The Candle Doesn't Jump Rule", "body": "State changes cross-fade over 300–420ms on cubic-bezier(0.22, 1, 0.36, 1); nothing appears instantly and nothing slides.", "section": "elevation" }

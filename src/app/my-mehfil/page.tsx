@@ -70,7 +70,7 @@ export default function MyMehfilPage() {
             onClick={() => setCollectionFilter(c)}
             aria-pressed={collection === c}
             className={
-              "rounded-full px-4 py-1.5 font-body text-[13.5px] italic transition-all duration-300 " +
+              "rounded-sm px-4 py-1.5 font-body text-[13.5px] italic transition-all duration-300 " +
               (collection === c ? "text-chamber-950" : "text-ivory-400 hover:text-gilt-200")
             }
             style={

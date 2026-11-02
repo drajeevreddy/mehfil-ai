@@ -73,9 +73,9 @@ export function DemoAlcove({ className }: { className?: string }) {
         {shayari && !rolling && (
           <motion.div
             key={shayari.id}
-            initial={reduce ? false : { opacity: 0, y: 14, filter: "blur(8px)" }}
-            animate={{ opacity: 1, y: 0, filter: "blur(0px)" }}
-            exit={reduce ? undefined : { opacity: 0, y: -10, filter: "blur(6px)" }}
+            initial={reduce ? false : { opacity: 0, y: 14 }}
+            animate={{ opacity: 1, y: 0 }}
+            exit={reduce ? undefined : { opacity: 0, y: -10 }}
             transition={{ duration: 1.1, ease: [0.22, 1, 0.36, 1] }}
             className="relative z-10 flex flex-col items-center"
           >

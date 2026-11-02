@@ -154,7 +154,7 @@ function StudioInner() {
                 aria-checked={mode === m.key}
                 onClick={() => setMode(m.key)}
                 className={cn(
-                  "rounded-full px-3.5 py-1.5 font-body text-[13.5px] italic transition-all duration-300",
+                  "rounded-sm px-3.5 py-1.5 font-body text-[13.5px] italic transition-all duration-300",
                   mode === m.key ? "text-chamber-950" : "text-ivory-400 hover:text-gilt-200"
                 )}
                 style={

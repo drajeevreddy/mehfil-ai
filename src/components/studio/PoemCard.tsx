@@ -166,7 +166,7 @@ export function PoemCard({ shayari, demo, onResult, onLoadStart, loading, classN
           </h3>
           <div className="flex flex-wrap items-center justify-center gap-2">
             {emotionLabels.split(" + ").map((e) => (
-              <span key={e} className="rounded-full border border-gilt-500/40 px-2.5 py-0.5 font-record text-[11px] tracking-[0.1em] text-ivory-400">
+              <span key={e} className="rounded-sm border border-gilt-500/40 px-2.5 py-0.5 font-record text-[11px] tracking-[0.1em] text-ivory-400">
                 {e}
               </span>
             ))}
@@ -357,7 +357,7 @@ function RefineButton({
       onClick={() => void onClick(action)}
       disabled={busy !== null}
       className={cn(
-        "inline-flex items-center gap-1.5 rounded-full px-3 py-1.5 font-body text-[13px] italic transition-all duration-300",
+        "inline-flex items-center gap-1.5 rounded-sm px-3 py-1.5 font-body text-[13px] italic transition-all duration-300",
         "text-ivory-500 hover:text-gilt-200 disabled:opacity-50"
       )}
       style={{ boxShadow: "inset 0 0 0 1px rgba(200,162,94,0.2)" }}

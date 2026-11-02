@@ -54,7 +54,7 @@ export default async function QawwaliUniversePage({
             href={f.key === "all" ? "/qawwali-universe" : `/qawwali-universe?filter=${f.key}`}
             aria-current={f.key === active.key ? "true" : undefined}
             className={
-              "rounded-full px-4 py-2 font-body text-[14px] italic transition-all duration-300 " +
+              "rounded-sm px-4 py-2 font-body text-[14px] italic transition-all duration-300 " +
               (f.key === active.key ? "text-chamber-950" : "text-ivory-400 hover:text-gilt-200")
             }
             style={

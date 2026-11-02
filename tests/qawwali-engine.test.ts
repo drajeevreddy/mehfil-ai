@@ -21,7 +21,7 @@ describe("engine 1 — qawwali retrieval honesty", () => {
     expect(ctx.composition?.verifiedTitle).toBe("Sanson Ki Mala");
     expect(ctx.researchStatus).toBe("verified_metadata");
     expect(ctx.confidence).toBe("medium");
-    expect(ctx.coverageNote).toContain("SAMPLE");
+    expect(ctx.coverageNote.toLowerCase()).toContain("sample");
   });
 
   it("loads a corpus where every entry carries sources and a coverage note", () => {

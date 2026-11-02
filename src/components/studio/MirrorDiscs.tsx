@@ -64,8 +64,8 @@ export function MirrorDiscs({
             {next && !disabled && (
               <span
                 aria-hidden
-                className="absolute inset-0 rounded-full animate-ping once"
-                style={{ background: "rgba(237,184,95,0.25)", animationDuration: "2.4s", animationIterationCount: "infinite" }}
+                className="absolute inset-0 rounded-full"
+                style={{ background: "rgba(237,184,95,0.25)" }}
               />
             )}
           </button>

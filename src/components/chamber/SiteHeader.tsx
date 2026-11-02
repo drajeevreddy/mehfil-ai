@@ -23,7 +23,7 @@ export function SiteHeader() {
   useEffect(() => setOpen(false), [pathname]);
 
   return (
-    <header className="relative z-20 border-b border-gilt-600/25 bg-chamber-950/70 backdrop-blur-[2px]">
+    <header className="relative z-20 border-b border-gilt-600/40 bg-chamber-900/95">
       <div className="mx-auto flex h-16 w-full max-w-7xl items-center justify-between px-4 sm:px-6 lg:px-8">
         <Link href="/" className="group flex items-baseline gap-3" aria-label="MEHFIL AI — home">
           <span className="font-display text-lg tracking-[0.22em] text-gilt-200 transition-colors group-hover:text-gilt-100 sm:text-xl">

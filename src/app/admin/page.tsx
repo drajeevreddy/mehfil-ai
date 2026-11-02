@@ -173,9 +173,9 @@ export default function AdminPage() {
                   <td className="px-4 py-3">{r.sourceCount}</td>
                   <td className="px-4 py-3">
                     <span className="inline-flex items-center gap-2">
-                      <span className="h-1.5 w-24 overflow-hidden rounded-full bg-chamber-700">
+                      <span className="h-1.5 w-24 overflow-hidden rounded-sm bg-chamber-700">
                         <span
-                          className="block h-full rounded-full"
+                          className="block h-full rounded-sm"
                           style={{
                             width: `${Math.round(r.completeness * 100)}%`,
                             background: "linear-gradient(90deg,#8a6a45,#e8cd93)",
