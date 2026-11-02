@@ -7,6 +7,7 @@
  * none of them internally performs another engine's responsibility.
  */
 
+import crypto from "crypto";
 import { interpretEmotion } from "@/engines/emotion/engine";
 import { retrieveForIntent } from "@/engines/qawwali/engine";
 import { resolveProvider } from "@/engines/providers";
@@ -29,6 +30,15 @@ function nextId(): string {
   ).toString(36)}`;
 }
 
+function nextSeed(): number {
+  try {
+    const buf = crypto.randomBytes(4);
+    return buf.readUInt32LE(0) >>> 0;
+  } catch {
+    return Math.floor(Math.random() * 2 ** 31);
+  }
+}
+
 export async function generateShayari(
   request: GenerateRequest,
   opts: { language?: Language } = {}
@@ -36,7 +46,7 @@ export async function generateShayari(
   const intent = interpretEmotion(request);
   const qawwali: QawwaliContext = retrieveForIntent(intent, request.qawwaliSlug);
   const provider = resolveProvider();
-  const seed = request.seed ?? Math.floor(Math.random() * 2 ** 31);
+  const seed = request.seed ?? nextSeed();
   const form: PoetryForm = request.form ?? "sher";
   const language: Language = opts.language ?? request.language ?? "roman";
 

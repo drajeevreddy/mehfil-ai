@@ -95,31 +95,39 @@ export function selectCouplets(
   const pool = candidates.filter((c) => c.score > 0);
   const usable = (pool.length >= count ? pool : candidates).sort((a, b) => b.score - a.score);
 
+
+  // Fisher-Yates shuffle the whole usable pool with our RNG so every pick
+  // is genuinely random within the affinity-ranked order — not locked to a
+  // top-4 window that keeps returning the same couplet.
+  const shuffled = usable.slice();
+  for (let i = shuffled.length - 1; i > 0; i--) {
+    const j = Math.floor(rng() * (i + 1));
+    [shuffled[i], shuffled[j]] = [shuffled[j], shuffled[i]];
+  }
+
   const picked: CoupletTemplate[] = [];
   const usedFirstWords = new Set<string>();
   const usedRhymes = new Map<string, number>();
 
-  for (let i = 0; i < count; i++) {
-    // eligible pool: unused, fresh opening word, rhyme variety budget
-    const eligible = usable.filter(({ t }) => {
-      if (picked.some((p) => p.id === t.id)) return false;
-      if (usedFirstWords.has(t.roman[0].split(" ")[0])) return false;
-      if ((usedRhymes.get(t.rhyme ?? "-") ?? 0) >= 2) return false;
-      return true;
-    });
-    const fallback = usable.filter(({ t }) => {
-      if (picked.some((p) => p.id === t.id)) return false;
-      return usedFirstWords.has(t.roman[0].split(" ")[0]);
-    });
-    // real wander: draw uniformly among the top 4 score-ordered candidates —
-    // high affinity preferred, same storyline, genuinely different picks
-    const source = eligible.length > 0 ? eligible : fallback;
-    const drawWindow = Math.min(source.length, 4);
-    const choice = source[Math.floor(rng() * drawWindow * 0.999)];
-    if (!choice) break;
-    picked.push(choice.t);
-    usedFirstWords.add(choice.t.roman[0].split(" ")[0]);
-    usedRhymes.set(choice.t.rhyme ?? "-", (usedRhymes.get(choice.t.rhyme ?? "-") ?? 0) + 1);
+  for (const cand of shuffled) {
+    if (picked.length >= count) break;
+    const t = cand.t;
+    if (picked.some((p) => p.id === t.id)) continue;
+    if (usedFirstWords.has(t.roman[0].split(" ")[0])) continue;
+    if ((usedRhymes.get(t.rhyme ?? "-") ?? 0) >= 2) continue;
+    picked.push(t);
+    usedFirstWords.add(t.roman[0].split(" ")[0]);
+    usedRhymes.set(t.rhyme ?? "-", (usedRhymes.get(t.rhyme ?? "-") ?? 0) + 1);
+  }
+
+  // If constraints starved the pool, fill from remaining shuffled candidates
+  // ignoring first-word/rhyme rules rather than repeating.
+  if (picked.length < count) {
+    for (const cand of shuffled) {
+      if (picked.length >= count) break;
+      if (picked.some((p) => p.id === cand.t.id)) continue;
+      picked.push(cand.t);
+    }
   }
   return picked;
 }
