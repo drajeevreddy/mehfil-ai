@@ -178,6 +178,23 @@ The app is a standard Next.js App Router server (Node runtime). Any Node host wo
 5. The admin endpoints are key-gated per instance — rotate `MEHFIL_ADMIN_KEY` instead
    of shipping it in images.
 
+## Live deployment
+
+- **GitHub:** https://github.com/drajeevreddy/mehfil-ai (public)
+- **Vercel:** https://nfak-lirdoffkk-cardzey.vercel.app
+- **API health:** `GET https://nfak-lirdoffkk-cardzey.vercel.app/api/qawwali`
+
+## Supabase setup (manual)
+
+The Supabase CLI is not available in this environment, so the project must be
+provisioned manually:
+
+1. Create a project at https://supabase.com
+2. Run `supabase/migrations/0001_init.sql` in the SQL editor
+3. Set env vars: `SUPABASE_URL`, `SUPABASE_ANON_KEY`, `MEHFIL_ADMIN_KEY`
+4. The admin API routes (`/api/admin/research`) and Row Level Security policies are
+   already defined in the codebase and ready to use once Supabase is connected.
+
 ## Project structure
 
 ```

@@ -476,218 +476,6 @@
     }
   },
   {
-    "slug": "best-of-shahenshah",
-    "verifiedTitle": "Best of Shahenshah",
-    "alternateTitles": [
-      "Shahenshah",
-      "Vol 1"
-    ],
-    "language": "Punjabi / Urdu (OSA catalog)",
-    "poeticTradition": "qawwali",
-    "attributedPoet": null,
-    "yearsRecorded": "OSA Vol. 1 (lifetime release)",
-    "researchStatus": "verified_metadata",
-    "annotationStatus": "sample_annotation",
-    "confidence": "medium",
-    "coverageNote": "VERIFIED: listed as OSA Vol. 1 in Wikipedia's Nusrat Fateh Ali Khan discography (OSA Releases section). Interpretive layer is a labeled sample annotation. attributedPoet is null - no consulted source names a poet for this compilation.",
-    "sources": [
-      {
-        "label": "Wikipedia - Nusrat Fateh Ali Khan discography (OSA Releases)",
-        "url": "https://en.wikipedia.org/wiki/Nusrat_Fateh_Ali_Khan_discography",
-        "kind": "metadata"
-      }
-    ],
-    "interpretation": {
-      "emotionalSummary": "INTERPRETATION: SAMPLE ANNOTATION — a compilation entry from Khan's early OSA catalog; emotional content is drawn from the constituent tracks rather than a single poem.",
-      "dominantEmotions": [
-        "ishq",
-        "devotion"
-      ],
-      "emotionalProgression": [
-        "devotion",
-        "ishq"
-      ],
-      "sufiConcepts": [
-        "ishq-e-majazi",
-        "tasawwuf"
-      ],
-      "symbolicImagery": [
-        "dil",
-        "raat"
-      ],
-      "literaryCharacteristics": []
-    }
-  },
-  {
-    "slug": "tumhain-dillagi-bhool",
-    "verifiedTitle": "Tumhain Dillagi Bhool",
-    "alternateTitles": [
-      "Vol 2"
-    ],
-    "language": "Punjabi / Urdu (OSA catalog)",
-    "poeticTradition": "qawwali",
-    "attributedPoet": null,
-    "yearsRecorded": "OSA Vol. 2 (lifetime release)",
-    "researchStatus": "verified_metadata",
-    "annotationStatus": "sample_annotation",
-    "confidence": "medium",
-    "coverageNote": "VERIFIED: listed as OSA Vol. 2 in Wikipedia's Nusrat Fateh Ali Khan discography. Interpretive layer is a labeled sample annotation.",
-    "sources": [
-      {
-        "label": "Wikipedia - Nusrat Fateh Ali Khan discography (OSA Releases)",
-        "url": "https://en.wikipedia.org/wiki/Nusrat_Fateh_Ali_Khan_discography",
-        "kind": "metadata"
-      }
-    ],
-    "interpretation": {
-      "emotionalSummary": "INTERPRETATION: SAMPLE ANNOTATION — a compilation entry from Khan's early OSA catalog.",
-      "dominantEmotions": [
-        "dard",
-        "hijr"
-      ],
-      "emotionalProgression": [
-        "hijr",
-        "dard"
-      ],
-      "sufiConcepts": [
-        "hijr",
-        "ishq-e-haqiqi"
-      ],
-      "symbolicImagery": [
-        "raat",
-        "dil"
-      ],
-      "literaryCharacteristics": []
-    }
-  },
-  {
-    "slug": "je-toon-rab-noon-manana",
-    "verifiedTitle": "Je Toon Rab Noon Manana",
-    "alternateTitles": [
-      "Vol 3"
-    ],
-    "language": "Punjabi",
-    "poeticTradition": "kafi / Sufi poetry",
-    "attributedPoet": null,
-    "yearsRecorded": "OSA Vol. 3 (lifetime release)",
-    "researchStatus": "verified_metadata",
-    "annotationStatus": "sample_annotation",
-    "confidence": "medium",
-    "coverageNote": "VERIFIED: listed as OSA Vol. 3 in Wikipedia's Nusrat Fateh Ali Khan discography. Interpretive layer is a labeled sample annotation.",
-    "sources": [
-      {
-        "label": "Wikipedia - Nusrat Fateh Ali Khan discography (OSA Releases)",
-        "url": "https://en.wikipedia.org/wiki/Nusrat_Fateh_Ali_Khan_discography",
-        "kind": "metadata"
-      }
-    ],
-    "interpretation": {
-      "emotionalSummary": "INTERPRETATION: SAMPLE ANNOTATION — a Punjabi kafi-style devotional address from Khan's OSA catalog.",
-      "dominantEmotions": [
-        "devotion",
-        "spiritualLonging"
-      ],
-      "emotionalProgression": [
-        "devotion",
-        "spiritualLonging",
-        "surrender"
-      ],
-      "sufiConcepts": [
-        "ishq-e-haqiqi",
-        "tasawwuf"
-      ],
-      "symbolicImagery": [
-        "khuda",
-        "dua"
-      ],
-      "literaryCharacteristics": []
-    }
-  },
-  {
-    "slug": "wadah-kar-ke-sahjjan",
-    "verifiedTitle": "Wadah Kar Ke Sahjjan",
-    "alternateTitles": [
-      "Vol 4"
-    ],
-    "language": "Punjabi / Urdu (OSA catalog)",
-    "poeticTradition": "qawwali",
-    "attributedPoet": null,
-    "yearsRecorded": "OSA Vol. 4 (lifetime release)",
-    "researchStatus": "verified_metadata",
-    "annotationStatus": "sample_annotation",
-    "confidence": "medium",
-    "coverageNote": "VERIFIED: listed as OSA Vol. 4 in Wikipedia's Nusrat Fateh Ali Khan discography. Interpretive layer is a labeled sample annotation.",
-    "sources": [
-      {
-        "label": "Wikipedia - Nusrat Fateh Ali Khan discography (OSA Releases)",
-        "url": "https://en.wikipedia.org/wiki/Nusrat_Fateh_Ali_Khan_discography",
-        "kind": "metadata"
-      }
-    ],
-    "interpretation": {
-      "emotionalSummary": "INTERPRETATION: SAMPLE ANNOTATION — a compilation entry from Khan's OSA catalog.",
-      "dominantEmotions": [
-        "ishq",
-        "devotion"
-      ],
-      "emotionalProgression": [
-        "devotion",
-        "ishq"
-      ],
-      "sufiConcepts": [
-        "ishq-e-majazi",
-        "tasawwuf"
-      ],
-      "symbolicImagery": [
-        "dil",
-        "raat"
-      ],
-      "literaryCharacteristics": []
-    }
-  },
-  {
-    "slug": "gorakh-dhanda",
-    "verifiedTitle": "Gorakh Dhanda",
-    "alternateTitles": [
-      "Vol 5"
-    ],
-    "language": "Punjabi / Urdu (OSA catalog)",
-    "poeticTradition": "qawwali",
-    "attributedPoet": null,
-    "yearsRecorded": "OSA Vol. 5 (lifetime release)",
-    "researchStatus": "verified_metadata",
-    "annotationStatus": "sample_annotation",
-    "confidence": "medium",
-    "coverageNote": "VERIFIED: listed as OSA Vol. 5 in Wikipedia's Nusrat Fateh Ali Khan discography. Interpretive layer is a labeled sample annotation.",
-    "sources": [
-      {
-        "label": "Wikipedia - Nusrat Fateh Ali Khan discography (OSA Releases)",
-        "url": "https://en.wikipedia.org/wiki/Nusrat_Fateh_Ali_Khan_discography",
-        "kind": "metadata"
-      }
-    ],
-    "interpretation": {
-      "emotionalSummary": "INTERPRETATION: SAMPLE ANNOTATION — a compilation entry from Khan's OSA catalog.",
-      "dominantEmotions": [
-        "junoon",
-        "ishq"
-      ],
-      "emotionalProgression": [
-        "ishq",
-        "junoon"
-      ],
-      "sufiConcepts": [
-        "junoon-e-ishq",
-        "tasawwuf"
-      ],
-      "symbolicImagery": [
-        "aag",
-        "dil"
-      ],
-      "literaryCharacteristics": []
-    }
-  },
-  {
     "slug": "maula-ali-maula",
     "verifiedTitle": "Maula Ali Maula Ali",
     "alternateTitles": [
@@ -701,17 +489,47 @@
     "poeticTradition": "manqabat in praise of Imam Ali",
     "attributedPoet": null,
     "emotionalSummary": "INTERPRETATION: An address to a master whose name is also a claim of ownership: to call on Ali is to declare oneself already spoken for. The title's doubled form makes the piece circular, so its rising intensity is not a journey but a tightening - the same name pressed harder until the singer is inside it.",
-    "dominantEmotions": ["devotion", "surrender", "ishq"],
-    "emotionalProgression": ["devotion", "surrender", "ishq", "junoon"],
-    "sufiConcepts": ["ishq-e-haqiqi", "tasawwuf", "wilayat", "dhikr"],
-    "symbolicImagery": ["sajda", "dua", "khuda"],
+    "dominantEmotions": [
+      "devotion",
+      "surrender",
+      "ishq"
+    ],
+    "emotionalProgression": [
+      "devotion",
+      "surrender",
+      "ishq",
+      "junoon"
+    ],
+    "sufiConcepts": [
+      "ishq-e-haqiqi",
+      "tasawwuf",
+      "wilayat",
+      "dhikr"
+    ],
+    "symbolicImagery": [
+      "sajda",
+      "dua",
+      "khuda"
+    ],
     "researchStatus": "verified_metadata",
     "annotationStatus": "sample_annotation",
     "confidence": "medium",
     "sources": [
-      {"label": "Discogs - Nusrat Fateh Ali Khan, Reverence (Traditional Sufi Qawwalis) tracklist ('Manqabat In Raga Bhairavi - Maula Ali Maula Ali'; live at the Kufa Gallery, London, 14 December 1989)", "url": "https://www.discogs.com/release/15399748-Nusrat-Fateh-Ali-Khan-Reverence-Traditional-Sufi-Qawwalis", "kind": "metadata"},
-      {"label": "Discogs - Nusrat Fateh Ali Khan, House Of Shah (track 'Ali-Maula', OSA / Star Records, 1991)", "url": "https://www.discogs.com/release/1456795-Nusrat-Fateh-Ali-Khan-House-Of-Shah", "kind": "metadata"},
-      {"label": "Wikipedia - Qawwali (definition of manqabat as a song in praise of Imam Ali or a Sufi saint)", "url": "https://en.wikipedia.org/wiki/Qawwali", "kind": "scholarship"}
+      {
+        "label": "Discogs - Nusrat Fateh Ali Khan, Reverence (Traditional Sufi Qawwalis) tracklist ('Manqabat In Raga Bhairavi - Maula Ali Maula Ali'; live at the Kufa Gallery, London, 14 December 1989)",
+        "url": "https://www.discogs.com/release/15399748-Nusrat-Fateh-Ali-Khan-Reverence-Traditional-Sufi-Qawwalis",
+        "kind": "metadata"
+      },
+      {
+        "label": "Discogs - Nusrat Fateh Ali Khan, House Of Shah (track 'Ali-Maula', OSA / Star Records, 1991)",
+        "url": "https://www.discogs.com/release/1456795-Nusrat-Fateh-Ali-Khan-House-Of-Shah",
+        "kind": "metadata"
+      },
+      {
+        "label": "Wikipedia - Qawwali (definition of manqabat as a song in praise of Imam Ali or a Sufi saint)",
+        "url": "https://en.wikipedia.org/wiki/Qawwali",
+        "kind": "scholarship"
+      }
     ],
     "coverageNote": "VERIFIED (metadata only): two independent label-catalogue records document the composition. The Navras / Sony BMG Reverence (Traditional Sufi Qawwalis) box set lists Khan's 'Manqabat In Raga Bhairavi - Maula Ali Maula Ali' (a compilation of Navras releases, live at the Kufa Gallery, London, 14 December 1989), and OSA's 1991 House Of Shah lists the track 'Ali-Maula'. Wikipedia's Qawwali article supplies the formal definition of manqabat used to classify the tradition. CONFIDENCE IS MEDIUM, NOT LOW, BECAUSE: (a) no encyclopedic article exists for this composition, so all evidence is label/database metadata; (b) the two catalogues give different titles for what appears to be the same manqabat, so the verifiedTitle is a judgment call; (c) the widely circulated extended title 'Ali Maula Ali Maula Ali Dam Dam' comes from streaming-platform listings and social-media descriptions rather than a catalogued credible source, and is recorded only as an alternate title. INTERPRETATION: emotionalSummary, dominantEmotions, emotionalProgression, sufiConcepts, symbolicImagery and the 'Urdu / Persian' language label are the annotator's own reading or inferences from the manqabat form; no consulted source states the language mix. attributedPoet is null - no consulted source names a poet."
   },
@@ -726,16 +544,42 @@
     "poeticTradition": "ghazal (set to qawwali)",
     "attributedPoet": "Purnam Allahabadi",
     "emotionalSummary": "INTERPRETATION: A confession delivered too late to be useful: the speaker knew all along what loving this person would cost, and did it anyway. Its register is retrospective rather than immediate - not 'I am suffering' but 'I always knew I would', which converts grief into a kind of bleak pride.",
-    "dominantEmotions": ["ishq", "dard", "regret"],
-    "emotionalProgression": ["dard", "hijr", "ishq", "hope"],
-    "sufiConcepts": ["hijr", "ishq-e-haqiqi", "tasawwuf"],
-    "symbolicImagery": ["dil", "aansu", "kismat", "raat"],
+    "dominantEmotions": [
+      "ishq",
+      "dard",
+      "regret"
+    ],
+    "emotionalProgression": [
+      "dard",
+      "hijr",
+      "ishq",
+      "hope"
+    ],
+    "sufiConcepts": [
+      "hijr",
+      "ishq-e-haqiqi",
+      "tasawwuf"
+    ],
+    "symbolicImagery": [
+      "dil",
+      "aansu",
+      "kismat",
+      "raat"
+    ],
     "researchStatus": "verified_metadata",
     "annotationStatus": "sample_annotation",
     "confidence": "high",
     "sources": [
-      {"label": "Wikipedia - Tumhe Dillagi", "url": "https://en.wikipedia.org/wiki/Tumhe_Dillagi", "kind": "metadata"},
-      {"label": "Wikipedia - Nusrat Fateh Ali Khan (Purnam Allahabadi credited as lyricist of a work composed by Nusrat)", "url": "https://en.wikipedia.org/wiki/Nusrat_Fateh_Ali_Khan", "kind": "metadata"}
+      {
+        "label": "Wikipedia - Tumhe Dillagi",
+        "url": "https://en.wikipedia.org/wiki/Tumhe_Dillagi",
+        "kind": "metadata"
+      },
+      {
+        "label": "Wikipedia - Nusrat Fateh Ali Khan (Purnam Allahabadi credited as lyricist of a work composed by Nusrat)",
+        "url": "https://en.wikipedia.org/wiki/Nusrat_Fateh_Ali_Khan",
+        "kind": "metadata"
+      }
     ],
     "coverageNote": "VERIFIED: Wikipedia documents that 'Tumhe Dillagi' is a ghazal song written by lyricist Purnam Allahabadi and composed by Nusrat Fateh Ali Khan. The Nusrat Fateh Ali Khan article independently credits Purnam Allahabadi as lyricist of a Khan-composed work. INTERPRETATION: emotionalSummary, dominantEmotions, emotionalProgression, sufiConcepts and symbolicImagery are the annotator's own literary reading. INFERRED: the 'Urdu / Hindi' language label reflects that Purnam Allahabadi wrote in both registers; the consulted article does not state the recording's language. NOTE on tradition: Wikipedia calls the piece a ghazal song rather than a qawwali; the qawwali framing reflects its wide circulation in Khan's Sufi repertoire."
   },
@@ -750,16 +594,43 @@
     "poeticTradition": "kafi of Shah Hussain",
     "attributedPoet": "Shah Hussain",
     "emotionalSummary": "INTERPRETATION: Entanglement confessed without self-pity: the soul is caught, and the beloved's indifference is part of the catch. Shah Hussain's idiom lets devotion and erotic attachment share one vocabulary, so the composition reads simultaneously as a love complaint and as an account of a self that cannot detach from the divine.",
-    "dominantEmotions": ["hijr", "dard", "ishq"],
-    "emotionalProgression": ["hijr", "dard", "tanhai", "surrender"],
-    "sufiConcepts": ["ishq-e-haqiqi", "hijr", "fana", "tasawwuf"],
-    "symbolicImagery": ["dil", "raasta", "manzil", "khamoshi"],
+    "dominantEmotions": [
+      "hijr",
+      "dard",
+      "ishq"
+    ],
+    "emotionalProgression": [
+      "hijr",
+      "dard",
+      "tanhai",
+      "surrender"
+    ],
+    "sufiConcepts": [
+      "ishq-e-haqiqi",
+      "hijr",
+      "fana",
+      "tasawwuf"
+    ],
+    "symbolicImagery": [
+      "dil",
+      "raasta",
+      "manzil",
+      "khamoshi"
+    ],
     "researchStatus": "verified_metadata",
     "annotationStatus": "sample_annotation",
     "confidence": "high",
     "sources": [
-      {"label": "Wikipedia - Man Atkeya Beparwah De Naal", "url": "https://en.wikipedia.org/wiki/Man_Atkeya_Beparwah_De_Naal", "kind": "metadata"},
-      {"label": "Wikipedia - Qawwali (kafi form and the poets whose style defines it, including Shah Hussain)", "url": "https://en.wikipedia.org/wiki/Qawwali", "kind": "scholarship"}
+      {
+        "label": "Wikipedia - Man Atkeya Beparwah De Naal",
+        "url": "https://en.wikipedia.org/wiki/Man_Atkeya_Beparwah_De_Naal",
+        "kind": "metadata"
+      },
+      {
+        "label": "Wikipedia - Qawwali (kafi form and the poets whose style defines it, including Shah Hussain)",
+        "url": "https://en.wikipedia.org/wiki/Qawwali",
+        "kind": "scholarship"
+      }
     ],
     "coverageNote": "VERIFIED: Wikipedia documents that 'Man Atkeya Beparwah De Naal' (Punjabi, 'My soul is entangled with the indifferent one') is a Punjabi qawwali originally composed and performed by Ustad Nusrat Fateh Ali Khan; that the lyrics were written by the 16th-century Punjabi Sufi poet and mystic Shah Hussain (1538-1599); that Nusrat performed live renditions from the late 1980s onward; and that the official recording was released in 1992 on the album Prem Deewani, Vol. 52. Wikipedia's Qawwali article independently names Shah Hussain among the poets whose style defines the kafi form. INTERPRETATION: emotionalSummary, dominantEmotions, emotionalProgression, sufiConcepts and symbolicImagery are the annotator's own literary reading."
   },
@@ -775,17 +646,48 @@
     "poeticTradition": "Punjabi devotional qawwali in the form of a prayer (du'a) for the beloved's well-being",
     "attributedPoet": "Badar Ali Ansari (primary), with additional lyrics by Nusrat Fateh Ali Khan",
     "emotionalSummary": "INTERPRETATION: The most selfless lyric in this set: the lover asks for nothing, not even union, and begs only that the beloved be spared harm. That refusal to bargain is what gives the piece its edge - devotion that has stopped keeping accounts. Read as Sufi address, it is worship stripped of request.",
-    "dominantEmotions": ["wafa", "surrender", "devotion"],
-    "emotionalProgression": ["wafa", "surrender", "devotion", "hope"],
-    "sufiConcepts": ["ishq-e-haqiqi", "fana", "tasawwuf", "shukr"],
-    "symbolicImagery": ["dua", "dil", "khuda", "raat"],
+    "dominantEmotions": [
+      "wafa",
+      "surrender",
+      "devotion"
+    ],
+    "emotionalProgression": [
+      "wafa",
+      "surrender",
+      "devotion",
+      "hope"
+    ],
+    "sufiConcepts": [
+      "ishq-e-haqiqi",
+      "fana",
+      "tasawwuf",
+      "shukr"
+    ],
+    "symbolicImagery": [
+      "dua",
+      "dil",
+      "khuda",
+      "raat"
+    ],
     "researchStatus": "verified_metadata",
     "annotationStatus": "sample_annotation",
     "confidence": "high",
     "sources": [
-      {"label": "Wikipedia - Nit Khair Manga Sohneya Main Teri", "url": "https://en.wikipedia.org/wiki/Nit_Khair_Manga_Sohneya_Main_Teri", "kind": "metadata"},
-      {"label": "Wikipedia - Nusrat Fateh Ali Khan (Nit Khair Manga primarily penned by Badar Ali Ansari with additional lyrics by Nusrat; composed by Nusrat)", "url": "https://en.wikipedia.org/wiki/Nusrat_Fateh_Ali_Khan", "kind": "metadata"},
-      {"label": "Discogs - Nusrat Fateh Ali Khan, House Of Shah (track 'Nit Khair Mangan', OSA / Star Records, 1991)", "url": "https://www.discogs.com/release/1456795-Nusrat-Fateh-Ali-Khan-House-Of-Shah", "kind": "metadata"}
+      {
+        "label": "Wikipedia - Nit Khair Manga Sohneya Main Teri",
+        "url": "https://en.wikipedia.org/wiki/Nit_Khair_Manga_Sohneya_Main_Teri",
+        "kind": "metadata"
+      },
+      {
+        "label": "Wikipedia - Nusrat Fateh Ali Khan (Nit Khair Manga primarily penned by Badar Ali Ansari with additional lyrics by Nusrat; composed by Nusrat)",
+        "url": "https://en.wikipedia.org/wiki/Nusrat_Fateh_Ali_Khan",
+        "kind": "metadata"
+      },
+      {
+        "label": "Discogs - Nusrat Fateh Ali Khan, House Of Shah (track 'Nit Khair Mangan', OSA / Star Records, 1991)",
+        "url": "https://www.discogs.com/release/1456795-Nusrat-Fateh-Ali-Khan-House-Of-Shah",
+        "kind": "metadata"
+      }
     ],
     "coverageNote": "VERIFIED: Wikipedia documents that 'Nit Khair Manga Sohneya Main Teri' (Punjabi, 'I ask for your well-being my beloved') is a Punjabi qawwali originally composed and performed by Ustad Nusrat Fateh Ali Khan; that the lyrics are primarily penned by the Punjabi poet Badar Ali Ansari with additional lyrics written by Nusrat; that Nusrat performed live renditions from the late 1970s onward and released an official recording in 1981; and that the qawwali gained global prominence through his 1988 UK tour recordings by Oriental Star Agencies Ltd. The NFAK article independently notes that although some mistakenly attributed the composition to Badar, Nusrat composed it. Discogs independently documents the track 'Nit Khair Mangan' on the 1991 House Of Shah release. INTERPRETATION: emotionalSummary, dominantEmotions, emotionalProgression, sufiConcepts and symbolicImagery are the annotator's own literary reading."
   },
@@ -799,15 +701,38 @@
     "poeticTradition": "traditional Sufi qawwali (Persian-derived devotional qawwali with a munajaat-like interrogatory address)",
     "attributedPoet": "Muzaffar Warsi",
     "emotionalSummary": "INTERPRETATION: A question with no answer available, which is the point. By asking where the divine is and where the self is, the composition performs the dislocation it describes rather than reporting it - the distance between the two 'wheres' is the whole content of the song.",
-    "dominantEmotions": ["dard", "tanhai", "surrender"],
-    "emotionalProgression": ["tanhai", "dard", "surrender", "ishq"],
-    "sufiConcepts": ["fana", "hijr", "tasawwuf", "ishq-e-haqiqi"],
-    "symbolicImagery": ["manzil", "raasta", "rooh", "khuda"],
+    "dominantEmotions": [
+      "dard",
+      "tanhai",
+      "surrender"
+    ],
+    "emotionalProgression": [
+      "tanhai",
+      "dard",
+      "surrender",
+      "ishq"
+    ],
+    "sufiConcepts": [
+      "fana",
+      "hijr",
+      "tasawwuf",
+      "ishq-e-haqiqi"
+    ],
+    "symbolicImagery": [
+      "manzil",
+      "raasta",
+      "rooh",
+      "khuda"
+    ],
     "researchStatus": "verified_metadata",
     "annotationStatus": "sample_annotation",
     "confidence": "medium",
     "sources": [
-      {"label": "Wikipedia - Tu Kuja Man Kuja", "url": "https://en.wikipedia.org/wiki/Tu_Kuja_Man_Kuja", "kind": "metadata"}
+      {
+        "label": "Wikipedia - Tu Kuja Man Kuja",
+        "url": "https://en.wikipedia.org/wiki/Tu_Kuja_Man_Kuja",
+        "kind": "metadata"
+      }
     ],
     "coverageNote": "VERIFIED: Wikipedia's dedicated article documents that 'Tu Kuja Man Kuja' (given with a Persian rendering and the translation 'Where are You? Where am I?') is a qawwali performed by Nusrat Fateh Ali Khan, composed by Nusrat Fateh Ali Khan himself and written by Muzaffar Warsi. CONFIDENCE IS MEDIUM, NOT LOW, BECAUSE: only one source (a dedicated but short Wikipedia article) was located; no second independent metadata source (Discogs/AllMusic/label catalogue) was confirmed in the searches performed, and the article does not state the recording language, album or date. INTERPRETATION: emotionalSummary, dominantEmotions, emotionalProgression, sufiConcepts and symbolicImagery are the annotator's own literary reading. INFERRED: the 'Persian / Urdu' language label, the 'munajaat-like' characterisation, and the symbolicImagery are inferences from the title's Persian form and the interrogatory address; the consulted source does not state the language mix."
   },
@@ -821,16 +746,43 @@
     "poeticTradition": "ghazal-qawwali",
     "attributedPoet": "Fana Buland Shehri",
     "emotionalSummary": "INTERPRETATION: Praise so excessive it turns into complaint: the beloved outshines the moon and there is nowhere left to look. The ghazal's economy - one image, many couplets - lets the composition circle a single act of looking, so its intensity comes from accumulation rather than development.",
-    "dominantEmotions": ["ishq", "dard", "hijr"],
-    "emotionalProgression": ["hijr", "dard", "ishq", "hope"],
-    "sufiConcepts": ["ishq-e-haqiqi", "hijr", "tasawwuf", "visal"],
-    "symbolicImagery": ["chand", "raat", "dil", "mehfil"],
+    "dominantEmotions": [
+      "ishq",
+      "dard",
+      "hijr"
+    ],
+    "emotionalProgression": [
+      "hijr",
+      "dard",
+      "ishq",
+      "hope"
+    ],
+    "sufiConcepts": [
+      "ishq-e-haqiqi",
+      "hijr",
+      "tasawwuf",
+      "visal"
+    ],
+    "symbolicImagery": [
+      "chand",
+      "raat",
+      "dil",
+      "mehfil"
+    ],
     "researchStatus": "verified_metadata",
     "annotationStatus": "sample_annotation",
     "confidence": "high",
     "sources": [
-      {"label": "Wikipedia - Mere Rashke Qamar", "url": "https://en.wikipedia.org/wiki/Mere_Rashke_Qamar", "kind": "metadata"},
-      {"label": "Wikipedia - Nusrat Fateh Ali Khan (Mere Rashke Qamar as a ghazal-qawwali with lyrics by Fana Bulandshahri, composed by Nusrat)", "url": "https://en.wikipedia.org/wiki/Nusrat_Fateh_Ali_Khan", "kind": "metadata"}
+      {
+        "label": "Wikipedia - Mere Rashke Qamar",
+        "url": "https://en.wikipedia.org/wiki/Mere_Rashke_Qamar",
+        "kind": "metadata"
+      },
+      {
+        "label": "Wikipedia - Nusrat Fateh Ali Khan (Mere Rashke Qamar as a ghazal-qawwali with lyrics by Fana Bulandshahri, composed by Nusrat)",
+        "url": "https://en.wikipedia.org/wiki/Nusrat_Fateh_Ali_Khan",
+        "kind": "metadata"
+      }
     ],
     "coverageNote": "VERIFIED: Wikipedia documents that 'Mere Rashke Qamar' (Urdu, 'O Envy of the Moon') is a ghazal-qawwali written by Urdu poet Fana Buland Shehri and originally composed by Nusrat Fateh Ali Khan; that it was first performed in 1988 by Khan and popularized by him; and that it was later also performed by his nephew Rahat Fateh Ali Khan. The NFAK article independently describes it as a ghazal-qawwali with lyrics by Urdu poet Fana Bulandshahri composed by Nusrat. INTERPRETATION: emotionalSummary, dominantEmotions, emotionalProgression, sufiConcepts and symbolicImagery are the annotator's own literary reading. NOTE on spelling: the poet's name appears as 'Fana Buland Shehri' in the Mere Rashke Qamar article and 'Fana Bulandshahri' in the NFAK article; both are recorded here as documented spellings of the same attribution."
   },
@@ -844,15 +796,37 @@
     "poeticTradition": "nazm (composed and performed in the qawwali devotional manner)",
     "attributedPoet": "Javed Akhtar",
     "emotionalSummary": "INTERPRETATION: Praise directed at creation rather than the creator, which quietly turns admiration into worship. The repeated invocation asks the listener to look again at what has already been made, and that insistence on looking is the composition's spiritual work - attention offered as devotion.",
-    "dominantEmotions": ["ishq", "devotion", "hope"],
-    "emotionalProgression": ["ishq", "devotion", "hope", "surrender"],
-    "sufiConcepts": ["ishq-e-haqiqi", "tasawwuf", "shukr"],
-    "symbolicImagery": ["dil", "mehfil", "chand", "khuda"],
+    "dominantEmotions": [
+      "ishq",
+      "devotion",
+      "hope"
+    ],
+    "emotionalProgression": [
+      "ishq",
+      "devotion",
+      "hope",
+      "surrender"
+    ],
+    "sufiConcepts": [
+      "ishq-e-haqiqi",
+      "tasawwuf",
+      "shukr"
+    ],
+    "symbolicImagery": [
+      "dil",
+      "mehfil",
+      "chand",
+      "khuda"
+    ],
     "researchStatus": "verified_metadata",
     "annotationStatus": "sample_annotation",
     "confidence": "high",
     "sources": [
-      {"label": "Wikipedia - Afreen Afreen", "url": "https://en.wikipedia.org/wiki/Afreen_Afreen", "kind": "metadata"}
+      {
+        "label": "Wikipedia - Afreen Afreen",
+        "url": "https://en.wikipedia.org/wiki/Afreen_Afreen",
+        "kind": "metadata"
+      }
     ],
     "coverageNote": "VERIFIED: Wikipedia documents that 'Afreen Afreen' (Urdu, 'Praise to her Creator! Praise to her Creator!') is a nazm composed and performed by Nusrat Fateh Ali Khan with lyrics written by Javed Akhtar; that it first featured on their collaborative album Sangam in 1996; that a studio version was recorded by Nusrat's nephew Rahat Fateh Ali Khan in 2003 for Best of Khan 3; and that it was covered by Rahat Fateh Ali Khan and Momina Mustehsan during season 9 of Coke Studio in 2016. INTERPRETATION: emotionalSummary, dominantEmotions, emotionalProgression, sufiConcepts and symbolicImagery are the annotator's own literary reading. NOTE: only one encyclopedic source was located; the composition is classified as a nazm on Wikipedia's explicit statement."
   },
@@ -866,16 +840,42 @@
     "poeticTradition": "ghazal-qawwali",
     "attributedPoet": "Nusrat Fateh Ali Khan",
     "emotionalSummary": "INTERPRETATION: Retrospection as accusation: the singer keeps returning to a past face and finds it was never what he took it for. The piece's discomfort comes from its honesty about self-deception - not grief at loss, but grief at having been credulous. Its Sufi reading inverts this: the innocence mourned is the self's own, before experience hardened it.",
-    "dominantEmotions": ["hijr", "dard", "regret"],
-    "emotionalProgression": ["nostalgia", "hijr", "dard", "regret"],
-    "sufiConcepts": ["hijr", "ishq-e-haqiqi", "tasawwuf"],
-    "symbolicImagery": ["raat", "aansu", "khamoshi", "dil"],
+    "dominantEmotions": [
+      "hijr",
+      "dard",
+      "regret"
+    ],
+    "emotionalProgression": [
+      "nostalgia",
+      "hijr",
+      "dard",
+      "regret"
+    ],
+    "sufiConcepts": [
+      "hijr",
+      "ishq-e-haqiqi",
+      "tasawwuf"
+    ],
+    "symbolicImagery": [
+      "raat",
+      "aansu",
+      "khamoshi",
+      "dil"
+    ],
     "researchStatus": "verified_metadata",
     "annotationStatus": "sample_annotation",
     "confidence": "high",
     "sources": [
-      {"label": "Wikipedia - Sochta Hoon", "url": "https://en.wikipedia.org/wiki/Sochta_Hoon", "kind": "metadata"},
-      {"label": "Wikipedia - Nusrat Fateh Ali Khan (Sochta Hoon Ke Woh Kitne Masoom Thay originally written and composed by Nusrat; recorded by Oriental Star Agencies in 1985)", "url": "https://en.wikipedia.org/wiki/Nusrat_Fateh_Ali_Khan", "kind": "metadata"}
+      {
+        "label": "Wikipedia - Sochta Hoon",
+        "url": "https://en.wikipedia.org/wiki/Sochta_Hoon",
+        "kind": "metadata"
+      },
+      {
+        "label": "Wikipedia - Nusrat Fateh Ali Khan (Sochta Hoon Ke Woh Kitne Masoom Thay originally written and composed by Nusrat; recorded by Oriental Star Agencies in 1985)",
+        "url": "https://en.wikipedia.org/wiki/Nusrat_Fateh_Ali_Khan",
+        "kind": "metadata"
+      }
     ],
     "coverageNote": "VERIFIED: Wikipedia documents that 'Sochta Hoon' (Urdu, 'I think / I wonder') is a ghazal-qawwali originally written, composed and performed by Nusrat Fateh Ali Khan; that from 1979 onwards he sang it during live performances in Pakistan; that his first live performance outside Pakistan took place on a UK tour on 28 February 1985 at the Allah Ditta Centre in Birmingham; that this 1985 performance was recorded and released by Oriental Star Agencies Ltd; and that the piece was popularized by his nephew Rahat Fateh Ali Khan. The NFAK article independently dates live performances to the late 1970s and the official recording by Oriental Star Agencies to 1985. INTERPRETATION: emotionalSummary, dominantEmotions, emotionalProgression, sufiConcepts and symbolicImagery are the annotator's own literary reading."
   }
