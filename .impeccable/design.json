@@ -1,0 +1,130 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-11-02T22:55:00Z",
+  "title": "Design System: MEHFIL AI",
+  "extensions": {
+    "colorMeta": {
+      "chamber-black": { "role": "neutral-bg", "displayName": "Chamber Black", "canonical": "#0b0a0d", "tonalRamp": ["#070608", "#0b0a0d", "#120f11", "#1a1618", "#252024", "#383034", "#514850", "#766d73"] },
+      "chamber-well": { "role": "neutral-surface", "displayName": "Chamber Well", "canonical": "#14110f", "tonalRamp": ["#0d0b0a", "#14110f", "#1c1815", "#262019", "#332b22", "#453b31", "#5d5245", "#7e7365"] },
+      "velvet-chadar": { "role": "secondary", "displayName": "Velvet Chadar", "canonical": "#4a1220", "tonalRamp": ["#2d0a14", "#4a1220", "#5d1a2a", "#75233a", "#8e3450", "#a94e6b", "#c07c92", "#d8a8ba"] },
+      "gilt-brass": { "role": "primary", "displayName": "Gilt Brass", "canonical": "#c8a25e", "tonalRamp": ["#8a6a45", "#a5824f", "#c8a25e", "#dcc084", "#e8cd93", "#f2e0b6", "#f7ebd2", "#fbf4e6"] },
+      "gilt-dim": { "role": "primary-muted", "displayName": "Gilt Dim (Bronze)", "canonical": "#8a6a45", "tonalRamp": ["#5e4630", "#75552f", "#8a6a45", "#a5824f", "#b8a078", "#cbb894", "#dcd0b2", "#ece6d4"] },
+      "ivory-body": { "role": "neutral-fg", "displayName": "Ivory Body", "canonical": "#e7dcc6", "tonalRamp": ["#b8a88d", "#c9bca4", "#d9cbb2", "#e7dcc6", "#f2e8d5", "#f7f0e2", "#faf4ea", "#fdf9f3"] },
+      "ivory-muted": { "role": "neutral-fg-2", "displayName": "Ivory Muted", "canonical": "#b8a88d", "tonalRamp": ["#8a8070", "#a1957f", "#b8a88d", "#cbbfa8", "#dccfbc", "#e9ded0", "#f2e9e0", "#f8f1ea"] },
+      "petal-rose": { "role": "accent-soft", "displayName": "Petal Rose", "canonical": "#b5606a", "tonalRamp": ["#6e3a40", "#8c4852", "#b5606a", "#c97f86", "#d99aa0", "#e6b4b8", "#efd0d2", "#f7e5e6"] },
+      "lamp-glow": { "role": "light", "displayName": "Lamp Glow", "canonical": "#d99a3d", "tonalRamp": ["#8a5a1e", "#b07a2c", "#d99a3d", "#edb85f", "#f2cd82", "#f6dd9f", "#f9e8bd", "#fcf2d9"] }
+    },
+    "typographyMeta": {
+      "display": { "displayName": "Plaque Display", "purpose": "Engraved capitals: nameplates, page titles, buttons. Always tracked 0.14em+, never lowercase." },
+      "body": { "displayName": "Mehfil Body", "purpose": "Reading voice; italic carries the second voice (translations, whispers)." },
+      "urdu": { "displayName": "Nastaliq Verse", "purpose": "Every Urdu-script line, RTL, deep 2.15 leading, no letter-spacing." },
+      "record": { "displayName": "Ledger Voice", "purpose": "Provenance: statuses, stamps, coverage notes, citations." },
+      "devanagari": { "displayName": "Devanagari Display", "purpose": "The Hindi/Devanagari hero headline, weight 600." }
+    },
+    "shadows": [
+      { "name": "alcove-depth", "value": "inset 0 0 56px rgba(0,0,0,0.75), 0 24px 60px -24px rgba(0,0,0,0.9)", "purpose": "The recess a finished poem lives in." },
+      { "name": "niche-well", "value": "inset 0 0 0 1px rgba(200,162,94,0.16), inset 0 2px 8px rgba(0,0,0,0.6)", "purpose": "Controls and cards at rest." },
+      { "name": "plaque-relief", "value": "inset 0 1px 0 rgba(232,205,147,0.35), 0 10px 24px -12px rgba(0,0,0,0.8)", "purpose": "Brass relief under plaques." },
+      { "name": "ignition-glow", "value": "0 0 32px -10px rgba(217,154,61,0.35)", "purpose": "The hover/active light response." },
+      { "name": "alcove-lit", "value": "0 0 0 1px rgba(232,205,147,0.65), inset 0 0 90px rgba(217,154,61,0.16), 0 0 80px -12px rgba(217,154,61,0.3)", "purpose": "The alcove rim while a sher holds the light." }
+    ],
+    "motion": [
+      { "name": "ease-mehfil", "value": "cubic-bezier(0.22, 1, 0.36, 1)", "purpose": "Default easing for every state change (300-420ms)." },
+      { "name": "sher-reveal", "value": "opacity + translateY(10px) + blur(6px)→0 over 900ms", "purpose": "A sher fading up in the lit alcove, line by line at 350ms stagger." },
+      { "name": "petal-drift", "value": "22-35s linear loop, y 0→110vh, gentle x wander, rotate 340deg", "purpose": "Ambient rose petals; disabled under prefers-reduced-motion." }
+    ],
+    "breakpoints": [
+      { "name": "sm", "value": "640px" },
+      { "name": "md", "value": "768px" },
+      { "name": "lg", "value": "1024px" },
+      { "name": "xl", "value": "1280px" }
+    ]
+  },
+  "components": [
+    {
+      "name": "Primary Plaque",
+      "kind": "button",
+      "refersTo": "plaque-primary",
+      "description": "Gilt brass relief button for the one primary action (ENTER MEHFIL / GENERATE).",
+      "html": "<button class=\"ds-btn-primary\">ENTER MEHFIL</button>",
+      "css": ".ds-btn-primary{display:inline-flex;align-items:center;justify-content:center;height:44px;padding:0 32px;border:none;border-radius:2px;background:linear-gradient(180deg,#c8a25e 0%,#a5824f 55%,#8a6a45 100%);color:#1f1409;font-family:Cinzel,serif;font-size:13px;letter-spacing:.16em;text-transform:uppercase;text-shadow:0 1px 0 rgba(255,248,224,.3);box-shadow:0 0 0 1px rgba(242,224,182,.7),inset 0 1px 0 rgba(255,244,214,.75),inset 0 -3px 8px rgba(90,58,20,.55),0 12px 30px -12px rgba(217,154,61,.55);cursor:pointer;transition:all .3s cubic-bezier(.22,1,.36,1)}.ds-btn-primary:hover{background:linear-gradient(180deg,#dcc084 0%,#c8a25e 55%,#a5824f 100%);box-shadow:0 0 0 1px rgba(242,224,182,.9),inset 0 1px 0 rgba(255,248,224,.9),inset 0 -3px 8px rgba(90,58,20,.5),0 0 60px -6px rgba(217,154,61,.65)}.ds-btn-primary:disabled{opacity:.5;cursor:not-allowed}.ds-btn-primary:focus-visible{outline:2px solid #dcc084;outline-offset:3px}"
+    },
+    {
+      "name": "Ghost Plaque",
+      "kind": "button",
+      "refersTo": "plaque-ghost",
+      "description": "Secondary brass-ringed plaque for the signature path (US DARD KO LIKHO).",
+      "html": "<button class=\"ds-btn-ghost\">US DARD KO LIKHO</button>",
+      "css": ".ds-btn-ghost{display:inline-flex;align-items:center;justify-content:center;height:44px;padding:0 32px;border:none;border-radius:2px;background:linear-gradient(180deg,rgba(232,205,147,.16) 0%,rgba(138,106,69,.08) 100%),#14110f;color:#e8cd93;font-family:Cinzel,serif;font-size:13px;letter-spacing:.16em;text-transform:uppercase;box-shadow:0 0 0 1px rgba(200,162,94,.55),inset 0 1px 0 rgba(232,205,147,.35),0 10px 24px -12px rgba(0,0,0,.8);cursor:pointer;transition:all .38s cubic-bezier(.22,1,.36,1)}.ds-btn-ghost:hover{color:#f2e0b6;box-shadow:0 0 0 1px rgba(232,205,147,.85),inset 0 1px 0 rgba(242,224,182,.5),0 0 44px -8px rgba(217,154,61,.5)}.ds-btn-ghost:focus-visible{outline:2px solid #dcc084;outline-offset:3px}"
+    },
+    {
+      "name": "Mirror Chip (selected)",
+      "kind": "chip",
+      "refersTo": "emotion-chip-selected",
+      "description": "Emotion tile; floods gilt when selected, frosted well at rest (second entry).",
+      "html": "<button class=\"ds-chip\">ISHQ</button>",
+      "css": ".ds-chip{display:inline-flex;align-items:center;padding:8px 16px;border:none;border-radius:3px;background:linear-gradient(180deg,rgba(28,24,21,.85),rgba(16,13,12,.9));color:#e7dcc6;font-family:Cinzel,serif;font-size:12px;letter-spacing:.14em;text-transform:uppercase;box-shadow:inset 0 0 0 1px rgba(200,162,94,.2),inset 0 2px 8px rgba(0,0,0,.5);cursor:pointer;transition:all .4s cubic-bezier(.22,1,.36,1)}.ds-chip:hover{color:#e8cd93}.ds-chip[data-selected=true]{background:linear-gradient(180deg,#e8cd93,#c8a25e 60%,#8a6a45);color:#0b0a0d;box-shadow:0 0 0 1px rgba(242,224,182,.75),0 0 26px -6px rgba(217,154,61,.55)}.ds-chip:focus-visible{outline:2px solid #dcc084;outline-offset:2px}"
+    },
+    {
+      "name": "Mirror Disc",
+      "kind": "custom",
+      "refersTo": "mirror-disc",
+      "description": "Intensity 1-5 as five mirror discs that ignite in sequence.",
+      "html": "<div class='ds-discs' role=\"slider\" aria-valuemin=\"1\" aria-valuemax=\"5\" aria-valuenow=\"3\" tabindex=\"0\"><button class='ds-disc' data-on='true' aria-label='Intensity 1'></button><button class='ds-disc' data-on='true' aria-label='Intensity 2'></button><button class='ds-disc' data-on='true' aria-label='Intensity 3'></button><button class='ds-disc' aria-label='Intensity 4'></button><button class='ds-disc' aria-label='Intensity 5'></button></div>",
+      "css": ".ds-discs{display:flex;gap:12px}.ds-disc{width:28px;height:28px;border-radius:9999px;border:none;cursor:pointer;transition:all .5s cubic-bezier(.22,1,.36,1);background:radial-gradient(circle at 34% 30%,rgba(217,203,178,.18),rgba(26,22,19,.9));box-shadow:0 0 0 1px rgba(200,162,94,.28),inset 0 1px 4px rgba(0,0,0,.6)}.ds-disc[data-on=true]{background:radial-gradient(circle at 34% 30%,#f2e0b6,#c8a25e 55%,#8a6a45);box-shadow:0 0 0 1px rgba(242,224,182,.8),0 0 18px rgba(217,154,61,.55),inset 0 0 6px rgba(11,10,8,.5)}.ds-disc:hover{transform:scale(1.1)}.ds-disc:focus-visible{outline:2px solid #dcc084;outline-offset:2px}"
+    },
+    {
+      "name": "Niches (card row)",
+      "kind": "card",
+      "refersTo": "panel",
+      "description": "Recessed chambers for content entries; gilt seam between neighbors.",
+      "html": "<div class=\"ds-niche-row\"><div class=\"ds-niche\"><h3>QAWWALI INTELLIGENCE</h3><p class='ds-niche-record'>THE RESEARCH</p><p>Reads the researched compositions — themes, concepts, metaphor — from labeled annotations. Never lyrics.</p></div><div class='ds-niche'><h3>EMOTION INTELLIGENCE</h3><p class='ds-niche-record'>THE INTENTION</p><p>Understands the mix: love with anger, betrayal held with dignity.</p></div></div>",
+      "css": ".ds-niche-row{display:grid;grid-template-columns:1fr 1fr;gap:1px;background:rgba(200,162,94,.28);border-radius:3px;overflow:hidden;max-width:640px}.ds-niche{background:linear-gradient(180deg,rgba(28,24,21,.85),rgba(16,13,12,.9));padding:36px 28px;box-shadow:inset 0 0 0 1px rgba(200,162,94,.16),inset 0 2px 8px rgba(0,0,0,.55);transition:all .42s cubic-bezier(.22,1,.36,1)}.ds-niche:hover{box-shadow:inset 0 0 0 1px rgba(232,205,147,.42),inset 0 2px 8px rgba(0,0,0,.5),0 0 32px -10px rgba(217,154,61,.35);transform:translateY(-2px)}.ds-niche h3{margin:0;font-family:Cinzel,serif;font-size:15px;letter-spacing:.16em;color:#e8cd93;text-transform:uppercase}.ds-niche-record{margin:6px 0 20px;font-family:'Courier Prime',monospace;font-size:10px;letter-spacing:.26em;text-transform:uppercase;color:#8a6a45}.ds-niche p:not(.ds-niche-record){margin:0;font-family:'EB Garamond',Georgia,serif;font-size:14.5px;line-height:1.6;color:#e7dcc6}"
+    },
+    {
+      "name": "Input (chamber field)",
+      "kind": "input",
+      "refersTo": "field",
+      "description": "Research search and admin key input on chamber-well fill.",
+      "html": "<input class=\"ds-input\" type=\"text\" placeholder=\"title or language…\" />",
+      "css": ".ds-input{width:224px;padding:8px 12px;border:1px solid rgba(138,106,69,.4);border-radius:3px;background:rgba(11,10,8,.8);color:#e7dcc6;font-family:'EB Garamond',Georgia,serif;font-size:14px}.ds-input::placeholder{color:rgba(184,168,141,.6)}.ds-input:focus-visible{outline:2px solid #dcc084;outline-offset:1px}"
+    },
+    {
+      "name": "The Alcove (signature)",
+      "kind": "custom",
+      "refersTo": "alcove-arch",
+      "description": "Arched gilt-rimmed recess holding the generated sher; mirror tiles ignite while it works.",
+      "html": "<article class=\"ds-alcove\"><div class='ds-alcove-scrim'></div><h3>Yaad</h3><p class='ds-alcove-sher'>بڑھ چڑ کے گردون میں ہم<br/>ہر رگ میں آگ لگا تھ نہیں</p><p class='ds-alcove-stamp'>DEMO · COMPOSED BY THE LOCAL CORE ENGINE</p></article>",
+      "css": ".ds-alcove{position:relative;min-height:420px;border-radius:46% 46% 2% 2%/30% 30% 1.5% 1.5%;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:14px;padding:80px 32px 44px;text-align:center;background:radial-gradient(ellipse 120% 85% at 50% 4%,rgba(237,184,95,.14),transparent 58%),radial-gradient(ellipse 100% 60% at 50% 100%,rgba(45,10,20,.85),transparent 75%),linear-gradient(180deg,#16110d 0%,#100c0a 100%);box-shadow:0 0 0 1px rgba(232,205,147,.65),0 0 0 7px rgba(11,10,8,.6),0 0 0 8px rgba(232,205,147,.32),inset 0 0 56px rgba(0,0,0,.6),inset 0 0 90px rgba(217,154,61,.16),0 0 80px -12px rgba(217,154,61,.3)}.ds-alcove-scrim{position:absolute;inset:0;pointer-events:none;background:radial-gradient(ellipse 70% 60% at 50% 42%,rgba(11,10,8,.82),rgba(11,10,8,.45) 70%,transparent 92%)}.ds-alcove h3{position:relative;margin:0;font-family:Cinzel,serif;font-size:24px;letter-spacing:.18em;color:#e8cd93;text-transform:uppercase}.ds-alcove-sher{position:relative;margin:12px 0 0;font-family:'Noto Nastaliq Urdu',serif;direction:rtl;line-height:2.15;font-size:20px;color:#f2e8d5}.ds-alcove-stamp{position:relative;margin-top:22px;font-family:'Courier Prime',monospace;font-size:11px;letter-spacing:.12em;color:#b8a88d}"
+    }
+  ],
+  "narrative": {
+    "northStar": "The Dargah Chamber",
+    "overview": "The interface is a shrine chamber entered after dusk. Light is rationed and deliberate: the ground stays near-black, velvet panels absorb it, and gilt returns it only where meaning lives — a rule, a plaque, a mirror that has earned its shine. Every generated sher is presented inside a lit, arched alcove like an offering on a shrine ledge, and the product's honesty rides the same material: demo verses carry pressed stamps, research entries carry verification seals and coverage notes. Density is generous at rest, intimate in focus; controls recede into the chamber's behavior, with state expressed as light level (frosted → backlit → gilt-flooded), never as announced chips. Motion is candlelight logic: slow ignitions, blur-up reveals, a slow petal drift; nothing snaps, nothing spins.",
+    "keyCharacteristics": [
+      "Near-black ground with warm candle pools; burgundy bleeds from the floor.",
+      "Gilt border rules of true brass weight frame every structural boundary.",
+      "Mirror-mosaic tessellation appears as structure (alcove interiors), never wallpaper.",
+      "One lit alcove holds the finished poem; its rim brightens while it works.",
+      "Roman Urdu typography rides EB Garamond; Urdu script always Nastaliq with deep leading."
+    ],
+    "rules": [
+      { "name": "The Brass-Never-Blue Rule", "body": "Every interactive affordance the browser would paint blue or white — focus rings, selection, caret, scrollbars, underline accents — is dressed in gilt. Blue never appears.", "section": "colors" },
+      { "name": "The One Lit Alcove Rule", "body": "Only one poem at a time holds the light; the alcove's rim and mirror tiles brighten while it works and settle when it rests.", "section": "colors" },
+      { "name": "The Ledger Voice Rule", "body": "Anything that states provenance, status, or research honesty is set in Courier Prime small caps — it reads as an entry in a record book, not UI chrome.", "section": "typography" },
+      { "name": "The Candle Doesn't Jump Rule", "body": "State changes cross-fade over 300–420ms on cubic-bezier(0.22, 1, 0.36, 1); nothing appears instantly and nothing slides.", "section": "elevation" }
+    ],
+    "dos": [
+      "Do express every interactive state as light level (frost → backlit → gilt flood) with 300–420ms ease.",
+      "Do set all Urdu-script text in Nastaliq at lh 2.15, RTL, zero letter-spacing, with unicode-bidi: isolate.",
+      "Do label provenance in Courier Prime: demo verses, research statuses, coverage notes. Honesty is part of the finish.",
+      "Do keep body text against a scrim or well when tiles glow behind it (≥4.5:1)."
+    ],
+    "donts": [
+      "Don't paint any interactive default blue/white; focus, selection, carets and scrollbars are gilt.",
+      "Don't render fire/velvet/mirror as flat site-wide wallpaper; the mosaic and velvet exist inside structural recesses only.",
+      "Don't stack gradients or halo shadows without offset; depth is recess + relief, never decoration.",
+      "Don't invent metaphors of other worlds (SaaS violet, neon, pastel) — the chamber has one voice."
+    ]
+  }
+}

@@ -9,7 +9,7 @@ export default function LandingPage() {
   return (
     <div>
       {/* ——— The chamber: first viewport ——— */}
-      <section className="relative mx-auto grid min-h-[calc(100dvh-4rem)] w-full max-w-[1600px] items-center gap-10 px-4 pb-16 pt-10 sm:px-6 lg:grid-cols-[1.15fr_1fr] lg:gap-16 lg:px-10">
+      <section className="relative mx-auto grid min-h-[74dvh] w-full max-w-[1600px] items-center gap-8 px-4 pb-8 pt-6 sm:px-6 lg:grid-cols-[1.15fr_1fr] lg:gap-14 lg:px-10">
         <div className="relative z-10 max-w-2xl">
           <h1 className="font-devanagari text-3xl font-semibold leading-[1.65] text-gilt-glow text-balance sm:text-[42px] lg:text-[47px]" style={{ fontFeatureSettings: "'kern'" }}>
             कुछ दर्द अल्फ़ाज़ नहीं माँगते,

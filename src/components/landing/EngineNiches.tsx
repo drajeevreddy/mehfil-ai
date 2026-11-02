@@ -25,7 +25,7 @@ const ENGINES = [
 
 export function EngineNiches() {
   return (
-    <section className="relative mx-auto w-full max-w-[1600px] px-4 py-20 sm:px-6 lg:px-10" aria-label="The three intelligence engines">
+    <section className="relative mx-auto w-full max-w-[1600px] px-4 pb-14 pt-4 sm:px-6 lg:px-10" aria-label="The three intelligence engines">
       <div className="mx-auto max-w-3xl text-center">
         <h2 className="font-display text-[22px] tracking-[0.14em] text-gilt-200 sm:text-2xl">
           HOW A SHER HAPPENS
@@ -36,7 +36,7 @@ export function EngineNiches() {
         </p>
       </div>
 
-      <div className="mx-auto mt-14 grid max-w-5xl gap-px overflow-hidden rounded-[3px] sm:grid-cols-3">
+      <div className="mx-auto mt-10 grid max-w-5xl gap-px overflow-hidden rounded-[3px] sm:grid-cols-3">
         {ENGINES.map((e, i) => (
           <div
             key={e.name}
