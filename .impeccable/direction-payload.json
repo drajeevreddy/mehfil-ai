@@ -1,0 +1,168 @@
+{
+  "title": "Choose the visual world for MEHFIL AI",
+  "question": "The roll assigned the Dargah Chamber. Keep it, take an alternate, or re-roll.",
+  "options": [
+    {
+      "id": "assigned-dargah",
+      "kind": "assigned",
+      "label": "The Dargah Chamber",
+      "kicker": "THE ROLL",
+      "lineage": "the shrine chamber where the qawwali happens — velvet chadar, shisha mirror-work, gilt borders, one lit alcove",
+      "thesis": "The studio is a chamber you enter; each sher hangs in a lit alcove like an offering.",
+      "palette": ["#0b0a0d", "#4a1220", "#c8a25e", "#f2e8d5", "#8a6a45"],
+      "materials": ["velvet chadar", "mirror mosaic tessellation", "gilt tin border", "rose petals", "candlelight"],
+      "viewport": "A dark chamber interior: gilt border rules frame the page, the hero sher hangs in an arched lit alcove at right, the headline set in gold on burgundy velvet at left, brass plaque CTAs, the three engines as three niches along the bottom.",
+      "risk": "Reads as themed kitsch if the mirror-work is applied as pattern instead of structure.",
+      "raised": [
+        { "from": "challenger-brodovitch-bazaar-spread", "raise": "The chamber's panels divide at a gilt central seam; a sher sets across two mirrored hemistich panels." },
+        { "from": "challenger-glazier-colorfield-partition", "raise": "State is light, not chips: mirror tiles ignite from tarnished to gilt when active, and the selected sher lights the room." },
+        { "from": "challenger-sneaker-box-stacks", "raise": "Qawwali Universe is a chamber wall of niches — one alcove per composition, pulled half-out to open its profile." },
+        { "from": "challenger-spy-dossier", "raise": "Research entries carry a gilt status stamp — verified, partial, sample — pressed as a seal." },
+        { "from": "challenger-nixie-counter", "raise": "Intensity 1-5 renders as five mirror discs that ignite in sequence, not a slider's chip row." },
+        { "from": "challenger-minihompy", "raise": "My Mehfil is the visitor's own ledger — every saved sher bound as an entry with its date." }
+      ],
+      "wireframe": { "cols": 12, "rows": 10, "regions": [
+        { "label": "gilt border rule + nameplate nav", "x": 0, "y": 0, "w": 12, "h": 1, "accent": true },
+        { "label": "headline in gold on velvet", "x": 1, "y": 1, "w": 6, "h": 3 },
+        { "label": "ENTER MEHFIL brass plaque", "x": 1, "y": 4, "w": 3, "h": 1, "accent": true },
+        { "label": "US DARD KO LIKHO secondary plaque", "x": 4, "y": 4, "w": 3, "h": 1 },
+        { "label": "lit alcove: live demo sher", "x": 7, "y": 1, "w": 4, "h": 5, "accent": true },
+        { "label": "three engine niches", "x": 1, "y": 7, "w": 11, "h": 2 },
+        { "label": "chamber floor rule", "x": 0, "y": 9, "w": 12, "h": 1 }
+      ] },
+      "hero": "https://impeccable.style/worlds/cards/craft-making-glazier-colorfield-partition-hero.webp"
+    },
+    {
+      "id": "pick-diwan",
+      "kind": "pick",
+      "label": "The Diwan-e-Ghazal Page",
+      "kicker": "IMPECCABLE'S PICK",
+      "lineage": "the illuminated manuscript page — the ghazal's native home",
+      "thesis": "Every sher is set in gold-leaf chrysography on indigo-dyed paper, two hemistichs across one gutter.",
+      "palette": ["#101a3a", "#c9a227", "#f4ecd8", "#7a1f2b"],
+      "materials": ["indigo-dyed paper", "gold leaf", "marginal cloud panels", "ruled margins"],
+      "viewport": "A dye-deep indigo page: the headline in gold chrysography with marginal cloud-panels, the demo sher set across the gutter as two hemistichs, CTAs as gilt rubric.",
+      "risk": "Also the direction most runs in this category land on.",
+      "wireframe": { "cols": 12, "rows": 10, "regions": [
+        { "label": "gold marginal rule + nav", "x": 0, "y": 0, "w": 12, "h": 1, "accent": true },
+        { "label": "headline, gold on indigo", "x": 1, "y": 1, "w": 6, "h": 3 },
+        { "label": "gilt rubric CTAs", "x": 1, "y": 4, "w": 5, "h": 1, "accent": true },
+        { "label": "sher across the gutter, two hemistichs", "x": 6, "y": 1, "w": 5, "h": 5 },
+        { "label": "cloud-panelled engine notes", "x": 1, "y": 7, "w": 11, "h": 2 }
+      ] }
+    },
+    {
+      "id": "challenger-brodovitch",
+      "kind": "challenger",
+      "catalogId": "brand-identity-canon-brodovitch-bazaar-spread",
+      "label": "The Brodovitch Spread",
+      "verdict": "competitive",
+      "lineage": "didot fashion-editorial spreads, mirrored gestures across a gutter",
+      "thesis": "The whole product travels by turning spreads: the composition page poses, the emotion page answers.",
+      "palette": ["#f4efe6", "#1c1a17", "#4a1220", "#c8a25e"],
+      "materials": ["warm white stock", "didot hairlines", "photogravure grays", "mirrored gesture"],
+      "viewport": "Two-page spreads paginated by scroll-snap: left page poses the qawwali's research profile, right page answers with the emotion picker and the generated sher.",
+      "case": "Fuses cleanly — the Us Dard Ko Likho flow IS a two-page spread — but its paper-white luxury ground softens the brief's pinned chamber palette.",
+      "risk": "Reads as a magazine mock when the spreads stop carrying working controls.",
+      "wireframe": { "cols": 12, "rows": 10, "regions": [
+        { "label": "didot masthead rule", "x": 0, "y": 0, "w": 12, "h": 1 },
+        { "label": "left spread: research profile", "x": 0, "y": 1, "w": 6, "h": 7 },
+        { "label": "gutter seam", "x": 6, "y": 0, "w": 1, "h": 10, "accent": true },
+        { "label": "right spread: emotion + sher", "x": 7, "y": 1, "w": 5, "h": 7 },
+        { "label": "caption line", "x": 0, "y": 8, "w": 12, "h": 1 }
+      ] }
+    },
+    {
+      "id": "challenger-glazier",
+      "kind": "challenger",
+      "catalogId": "craft-making-glazier-colorfield-partition",
+      "label": "The Glazier's Partition",
+      "verdict": "competitive",
+      "lineage": "a glazier's workshop wall — hand-rolled panes in a black grid, one pane one statement",
+      "thesis": "The studio UI is a glazed partition: every control is a pane, selection floods the pane with its color.",
+      "palette": ["#14141a", "#e9e6df", "#1f3a8a", "#8a3a12", "#4a1220"],
+      "materials": ["matte black glazing bars", "seeded-white sheet glass", "cobalt/amber/oxblood fields", "backlight"],
+      "viewport": "A grid of panes ruled by true black bars: emotion panes fog at rest, backlight on hover, and the chosen combination floods its color.",
+      "case": "Fuses cleanly for the generator — state as light level is excellent UI discipline — but a glazier's grid is not the audience's world.",
+      "risk": "Reads like a corporate partition wall when the panes carry no heat.",
+      "wireframe": { "cols": 12, "rows": 10, "regions": [
+        { "label": "glazed masthead", "x": 0, "y": 0, "w": 12, "h": 1 },
+        { "label": "emotion pane grid", "x": 0, "y": 1, "w": 7, "h": 6 },
+        { "label": "bar", "x": 7, "y": 0, "w": 1, "h": 10, "accent": true },
+        { "label": "lit generation pane", "x": 8, "y": 1, "w": 4, "h": 6, "accent": true },
+        { "label": "pane strip", "x": 0, "y": 7, "w": 12, "h": 2 }
+      ] }
+    },
+    {
+      "id": "challenger-sneaker-wall",
+      "kind": "challenger",
+      "catalogId": "textiles-weave-drape-fashion-sneaker-box-stacks",
+      "label": "The Sneaker Archive Wall",
+      "verdict": "declined",
+      "lineage": "a sneaker archive of stacked boxes, silhouette art on the end labels",
+      "thesis": "The catalog as a wall of boxes you pull half-out to open.",
+      "palette": ["#b4552a", "#1a1714", "#f6f1e7"],
+      "materials": ["burnt orange box board", "one-line silhouette", "tissue paper"],
+      "viewport": "A wall of stacked boxes; each qawwali an end label pulled half-out of the stack.",
+      "case": "Fuses poorly — sneaker culture is not this audience's world.",
+      "risk": "Costume of a foreign consumer object.",
+      "kept": "Browsable physical inventory: the chamber takes the wall of niches."
+    },
+    {
+      "id": "challenger-spy-dossier",
+      "kind": "challenger",
+      "catalogId": "pop-culture-shelf-spy-dossier-title-sequence",
+      "label": "The Spy Dossier",
+      "verdict": "declined",
+      "lineage": "sixties film title sequences — manila case files, typed records, a classification stamp",
+      "thesis": "The research dashboard as a case file with a red stamp landing last.",
+      "palette": ["#d8c9a3", "#181614", "#a8232b"],
+      "materials": ["manila stock", "typed records", "red stamp"],
+      "viewport": "Numbered frames of typed research records closed by a stamp.",
+      "case": "Fuses poorly — espionage iconography is alien to the mehfil.",
+      "risk": "Retro-novelty.",
+      "kept": "The stamp as a terminal act: research status becomes a gilt seal."
+    },
+    {
+      "id": "challenger-nixie",
+      "kind": "challenger",
+      "catalogId": "signals-instruments-nixie-laboratory-counter",
+      "label": "The Nixie Counter",
+      "verdict": "declined",
+      "lineage": "nixie-tube laboratory counters — digits glowing orange inside glass",
+      "thesis": "Emotion mix and intensity as tube banks of glowing digits.",
+      "palette": ["#141210", "#ff8a1f", "#9fb4c0"],
+      "materials": ["orange plasma", "glass envelopes", "blackened steel"],
+      "viewport": "Banks of glass tubes, one lit digit per place.",
+      "case": "Fuses poorly — on a Persuade surface the audience's own tools belong to the rut.",
+      "risk": "Lab costume.",
+      "kept": "Values as physical depth: intensity becomes five mirror discs."
+    },
+    {
+      "id": "challenger-minihompy",
+      "kind": "challenger",
+      "catalogId": "cyworld-minihompy-room",
+      "label": "The Minihompy Room",
+      "verdict": "declined",
+      "lineage": "decoratable isometric rooms with visitor ledgers",
+      "thesis": "My Mehfil as a room you furnish and a ledger visitors leave.",
+      "palette": ["#f2d7e6", "#cfe8dd", "#333"],
+      "materials": ["pastel wallpaper", "isometric tiles", "sticker furnishings"],
+      "viewport": "A pastel isometric room holding saved shers and a visitor ledger.",
+      "case": "Fuses poorly — pastel play is tonally wrong for midnight and gold.",
+      "risk": "Wrong register for the pinned palette.",
+      "kept": "The visitor ledger: My Mehfil binds saved shers as dated entries."
+    }
+  ],
+  "reroll": { "registers": ["safer", "bolder"] },
+  "canon": true,
+  "canonCard": {
+    "kind": "canon",
+    "label": "The category standard",
+    "thesis": "What this category ships, executed impeccably: dark-mode SaaS studio with a violet accent.",
+    "palette": ["#ffffff", "#0f0f12", "#7c5cff"],
+    "materials": ["clean grid", "card grid", "gradient glow"],
+    "viewport": "Hero headline, subcopy, one button, then a row of equal feature cards.",
+    "risk": "Indistinguishable from every other AI tool by design."
+  }
+}
