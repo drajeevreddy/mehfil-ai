@@ -3,16 +3,14 @@
 import { useMemo, useState } from "react";
 import { motion, useReducedMotion } from "framer-motion";
 import {
-  Copy, Check, Download, Share2, Save, Loader2, Languages, RotateCcw,
+  Copy, Check, Download, Share2, Save, Loader2, RotateCcw, Languages,
 } from "lucide-react";
 import type { GeneratedShayari, Language } from "@/lib/types";
 import { EMOTION_ENTRY } from "@/engines/emotion/lexicon";
 import { cn } from "@/lib/utils";
-import { paintCard, downloadBlob, type CardFormat } from "@/lib/poetry-card";
 import { postRefine } from "@/lib/mehfil-client";
 import { fileNameFor } from "@/lib/filename";
-import { saveShayari } from "@/lib/mehfil-storage";
-import { MirrorMosaic } from "@/components/chamber/MirrorMosaic";
+import { paintCard, downloadBlob, type CardFormat } from "@/lib/poetry-card";
 
 export type RefineAction = "deeper" | "more-pain" | "more-angry" | "more-ishq" | "more-sufi" | "change-ending";
 
@@ -95,7 +93,7 @@ export function PoemCard({ shayari, demo, onResult, onLoadStart, loading, classN
         title: shayari.title,
         emotions: emotionLabels,
         concept: shayari.philosophicalConcept ?? "",
-        providerLine: demo ? "DEMO — COMPOSED BY THE LOCAL CORE" : "MEHFIL AI — GENERATED",
+        providerLine: demo ? "DEMO — COMPOSED BY THE LOCAL CORE ENGINE" : "MEHFIL AI — GENERATED",
       },
       exportFormat
     );
@@ -124,38 +122,20 @@ export function PoemCard({ shayari, demo, onResult, onLoadStart, loading, classN
   }
 
   function saveToMehfil() {
-    // write the ledger directly — saving must not depend on another page listening
-    saveShayari(shayari);
-    window.dispatchEvent(new CustomEvent("mehfil:storage-changed", { detail: { key: "mehfil.saved.v1" } }));
+    import("@/lib/mehfil-storage").then(({ saveShayari }) => {
+      saveShayari(shayari);
+    });
   }
 
   return (
-    <article className={cn("alcove relative overflow-hidden px-6 pb-8 pt-16 sm:px-10 sm:pt-20", !reduce && "motion-safe", className)} aria-label="Generated shayari">
-      {/* lit mosaic ground — quieter behind text (contrast floor) */}
-      <div className="pointer-events-none absolute inset-0 opacity-40" aria-hidden>
-        <motion.div
-          initial={reduce ? undefined : { opacity: 0.25 }}
-          animate={{ opacity: 1 }}
-          transition={{ duration: 1.2, ease: "easeOut" }}
-          className="h-full w-full"
-        >
-          <MirrorMosaic className="h-full w-full" lit={demo ? 0.18 : 0.3} seed={13} />
-        </motion.div>
-      </div>
-      {/* scrim: the poem always reads against near-black */}
-      <div
-        aria-hidden
-        className="pointer-events-none absolute inset-0"
-        style={{
-          background:
-            "radial-gradient(ellipse 70% 60% at 50% 42%, rgba(11,10,8,0.82), rgba(11,10,8,0.45) 70%, transparent 92%)",
-        }}
-      />
-
+    <article
+      className={cn("poem-alcove relative overflow-hidden px-6 pb-8 pt-10 sm:px-10 sm:pt-14", className)}
+      aria-label="Generated shayari"
+    >
       {loading && (
-        <div className="absolute inset-0 z-20 flex flex-col items-center justify-center gap-3 bg-chamber-950/70" role="status" aria-live="polite">
+        <div className="absolute inset-0 z-20 flex flex-col items-center justify-center gap-3 bg-chamber/70" role="status" aria-live="polite">
           <Loader2 className="animate-spin text-gilt-300" size={28} aria-hidden />
-          <p className="font-body italic text-ivory-400">The mehfil is listening…</p>
+          <p className="font-body italic text-ivory-500">The mehfil is listening…</p>
         </div>
       )}
 
@@ -166,14 +146,15 @@ export function PoemCard({ shayari, demo, onResult, onLoadStart, loading, classN
           </h3>
           <div className="flex flex-wrap items-center justify-center gap-2">
             {emotionLabels.split(" + ").map((e) => (
-              <span key={e} className="rounded-sm border border-gilt-500/40 px-2.5 py-0.5 font-record text-[11px] tracking-[0.1em] text-ivory-400">
-                {e}
-              </span>
+              <span key={e} className={cn(
+                "emotion-chip",
+                { selected: true }
+              )}>{e}</span>
             ))}
           </div>
         </header>
 
-        <div aria-hidden className="gilt-rule mx-auto mt-4 opacity-80" style={{ width: "72%" }} />
+        <div aria-hidden className="gilt-rule mx-auto mt-5 opacity-80" style={{ width: "64%" }} />
 
         {/* poem body */}
         <div className={cn("px-2 pb-6 pt-8 text-center", wantRtl ? "urdu-text" : "font-body")} dir={wantRtl ? "rtl" : "ltr"}>
@@ -182,17 +163,17 @@ export function PoemCard({ shayari, demo, onResult, onLoadStart, loading, classN
             return (
               <motion.blockquote
                 key={ci}
-                initial={reduce ? false : { opacity: 0, y: 10, filter: "blur(6px)" }}
-                animate={{ opacity: 1, y: 0, filter: "blur(0px)" }}
+                initial={reduce ? false : { opacity: 0, y: 10 }}
+                animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: reduce ? 0 : 0.25 + ci * 0.35, duration: 0.9, ease: [0.22, 1, 0.36, 1] }}
                 className={cn(
                   "mx-auto max-w-2xl",
-                  ci > 0 && "mt-7 border-t border-gilt-600/20 pt-7"
+                  ci > 0 && "mt-7 border-t border-gilt-inner pt-7"
                 )}
               >
                 <p className={cn(wantRtl ? "" : "italic")}>{l1}</p>
                 {l2 && (
-                  <p className={cn("mt-1", view === "english" ? "font-body text-ivory-500" : "")}>{l2}</p>
+                  <p className={cn("mt-1", view === "english" ? "font-body text-ivory-muted" : "")}>{l2}</p>
                 )}
                 {(view === "urdu" || view === "english") && (
                   <>
@@ -243,12 +224,12 @@ export function PoemCard({ shayari, demo, onResult, onLoadStart, loading, classN
         </footer>
 
         {/* actions */}
-        <div className="mt-7 border-t border-gilt-600/20 pt-5">
+        <div className="mt-7 border-t border-gilt-inner pt-5">
           <div className="flex flex-wrap items-center justify-center gap-2">
             <ActionButton onClick={copyText} label={copied ? "Copied" : "Copy"} icon={copied ? Check : Copy} />
             <ActionButton onClick={saveToMehfil} label="Save to My Mehfil" icon={Save} />
             <ActionButton onClick={() => setShowTranslate((v) => !v)} label="Translate" icon={Languages} active={showTranslate} />
-            <div className="mx-2 hidden h-6 w-px bg-gilt-600/30 sm:block" aria-hidden />
+            <div className="mx-2 hidden h-5 w-px bg-gilt-600/30 sm:block" aria-hidden />
             <ActionButton onClick={downloadImage} label="Image" icon={busyAction === "image" ? Loader2 : Download} busy={busyAction === "image"} />
             <ActionButton onClick={shareCard} label="Share" icon={Share2} />
           </div>
@@ -276,7 +257,6 @@ export function PoemCard({ shayari, demo, onResult, onLoadStart, loading, classN
             </div>
           )}
 
-          {/* refinement actions */}
           {onResult && (
             <div className="mt-5 flex flex-wrap items-center justify-center gap-2" aria-label="Refine">
               <span className="record-text mr-1 text-[10px] uppercase tracking-[0.18em] text-ivory-600">Refine:</span>
@@ -289,7 +269,6 @@ export function PoemCard({ shayari, demo, onResult, onLoadStart, loading, classN
             </div>
           )}
 
-          {/* image format selector */}
           <div className="mt-4 flex items-center justify-center gap-3" role="group" aria-label="Image format">
             <span className="record-text text-[10px] uppercase tracking-[0.14em] text-ivory-600">Image:</span>
             {(["4:5", "1:1", "9:16"] as CardFormat[]).map((f) => (
@@ -299,8 +278,7 @@ export function PoemCard({ shayari, demo, onResult, onLoadStart, loading, classN
                 aria-pressed={exportFormat === f}
                 className={cn(
                   "rounded-sm px-2.5 py-1 font-record text-[11px] transition-colors",
-                  exportFormat === f ? "bg-gilt-400/15 text-gilt-200" : "text-ivory-600 hover:text-gilt-300",
-                  exportFormat === f ? "" : ""
+                  exportFormat === f ? "bg-gilt-400/15 text-gilt-200" : "text-ivory-600 hover:text-gilt-300"
                 )}
                 style={exportFormat === f ? { boxShadow: "inset 0 0 0 1px rgba(200,162,94,0.5)" } : undefined}
               >
@@ -329,10 +307,9 @@ function ActionButton({
       disabled={busy}
       aria-pressed={active}
       className={cn(
-        "inline-flex items-center gap-2 rounded-[2px] px-3.5 py-2 font-display text-[11px] tracking-[0.14em] uppercase transition-all duration-300",
+        "inline-flex items-center gap-2 rounded-sm px-3.5 py-2 font-display text-[11px] tracking-[0.14em] uppercase transition-all duration-300",
         "text-ivory-400 hover:text-gilt-200 disabled:opacity-60",
-        active && "text-gilt-200",
-        active ? "" : ""
+        active && "text-gilt-200"
       )}
       style={{ boxShadow: "inset 0 0 0 1px rgba(200,162,94,0.28)" }}
     >

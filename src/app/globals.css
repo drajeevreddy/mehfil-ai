@@ -1,9 +1,11 @@
 @import "tailwindcss";
 
 /*
-  MEHFIL AI — The Dargah Chamber world.
-  Pinned palette (PRODUCT.md): midnight black, deep charcoal, warm ivory,
-  antique gold, burgundy, muted bronze.
+  MEHFIL AI — Literary redesign.
+  Pinned palette: midnight black, deep charcoal, warm ivory, antique gold,
+  burgundy, muted bronze.
+  Craft floor: no glass, no gradient decoration, no rounded pills, no blur,
+  no AI-slop defaults. Editorial, text-first layout.
 */
 @theme {
   --color-chamber-950: #070608;
@@ -15,7 +17,6 @@
   --color-velvet-800: #3b0e1a;
   --color-velvet-700: #4a1220;
   --color-velvet-600: #5d1a2a;
-  --color-velvet-500: #75233a;
   --color-gilt-600: #8a6a45;
   --color-gilt-500: #a5824f;
   --color-gilt-400: #c8a25e;
@@ -29,20 +30,17 @@
   --color-ivory-200: #f7f0e2;
   --color-petal-500: #b5606a;
   --color-petal-400: #c97f86;
-  --color-lamp-500: #d99a3d;
-  --color-lamp-400: #edb85f;
 
   --font-display: var(--font-cinzel), "Cinzel", serif;
-  --font-body: var(--font-ebgaramond), Georgia, serif;
+  --font-body: var(--font-ebgaramond), "EB Garamond", Georgia, serif;
   --font-urdu: var(--font-noto-nastaliq), "Noto Nastaliq Urdu", serif;
   --font-record: var(--font-courierPrime), "Courier Prime", monospace;
-  --font-devanagari: var(--font-noto-devanagari), serif;
 
-  --shadow-alcove: 0 0 0 1px rgba(200, 162, 94, 0.28), 0 24px 60px -24px rgba(0, 0, 0, 0.9),
-    inset 0 0 42px rgba(217, 154, 61, 0.1);
   --shadow-plaque: 0 1px 0 rgba(232, 205, 147, 0.35) inset, 0 10px 24px -12px rgba(0, 0, 0, 0.8);
-
   --ease-mehfil: cubic-bezier(0.22, 1, 0.36, 1);
+
+  --radius-sm: 2px;
+  --radius-md: 3px;
 }
 
 :root {
@@ -60,40 +58,33 @@ body {
   min-height: 100dvh;
   -webkit-font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
+  line-height: 1.6;
 }
 
-/* Candle pools: the chamber is lit by low, warm light. */
-.chamber-ground {
-  position: relative;
-  background:
-    radial-gradient(ellipse 90% 55% at 78% 18%, rgba(217, 154, 61, 0.1), transparent 60%),
-    radial-gradient(ellipse 70% 45% at 12% 4%, rgba(217, 187, 93, 0.06), transparent 55%),
-    radial-gradient(ellipse 120% 70% at 50% 108%, rgba(74, 18, 32, 0.5), transparent 62%),
-    linear-gradient(180deg, var(--color-chamber-900) 0%, #0d0b0c 55%, var(--color-chamber-950) 100%);
-}
-
-/* Paper grain, filed as a texture (feTurbulence), sits above the ground and below content. */
+/* Subtle paper grain texture */
 .grain::after {
   content: "";
   position: absolute;
   inset: 0;
   pointer-events: none;
-  opacity: 0.05;
+  opacity: 0.04;
   mix-blend-mode: overlay;
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='160' height='160' filter='url(%23n)'/%3E%3C/svg%3E");
-  z-index: 1;
+  z-index: 0;
 }
 
-/* Gilt border rules of true brass weight */
+/* Gilt border rule — structural, not decorative */
 .gilt-rule {
-  background: linear-gradient(90deg, transparent, var(--color-gilt-500) 18%, var(--color-gilt-200) 50%, var(--color-gilt-500) 82%, transparent);
+  background: linear-gradient(90deg, transparent, var(--color-gilt-500) 20%, var(--color-gilt-200) 50%, var(--color-gilt-500) 80%, transparent);
   height: 1px;
+  border: none;
 }
 
-.gilt-rule-thick {
-  height: 3px;
-  background:
-    linear-gradient(90deg, transparent, var(--color-gilt-600) 10%, var(--color-gilt-400) 30%, var(--color-gilt-100) 50%, var(--color-gilt-400) 70%, var(--color-gilt-600) 90%, transparent);
+.gilt-rule-thin {
+  height: 1px;
+  background: var(--color-gilt-600);
+  border: none;
+  opacity: 0.5;
 }
 
 .text-gilt {
@@ -102,121 +93,79 @@ body {
 
 .text-gilt-glow {
   color: var(--color-gilt-200);
-  text-shadow:
-    0 0 18px rgba(200, 162, 94, 0.35),
-    0 0 42px rgba(200, 162, 94, 0.12);
+  text-shadow: 0 0 18px rgba(200, 162, 94, 0.25);
 }
 
-/* Velvet panel: the chadar surface */
-.velvet-panel {
-  background:
-    radial-gradient(ellipse 80% 60% at 50% 0%, rgba(117, 35, 58, 0.24), transparent 70%),
-    linear-gradient(160deg, var(--color-velvet-800) 0%, var(--color-velvet-900) 70%);
-  box-shadow:
-    inset 0 1px 0 rgba(232, 205, 147, 0.14),
-    inset 0 -14px 32px rgba(0, 0, 0, 0.55),
-    0 18px 44px -22px rgba(0, 0, 0, 0.85);
+.text-ivory {
+  color: var(--color-ivory-400);
 }
 
-/* The alcove: an arched, gilt-rimmed recess. */
-.alcove {
-  position: relative;
-  border-radius: 46% 46% 2% 2% / 30% 30% 1.5% 1.5%;
-  background:
-    radial-gradient(ellipse 120% 85% at 50% 4%, rgba(237, 184, 95, 0.14), transparent 58%),
-    radial-gradient(ellipse 100% 60% at 50% 100%, rgba(45, 10, 20, 0.85), transparent 75%),
-    linear-gradient(180deg, #16110d 0%, #100c0a 100%);
-  box-shadow:
-    0 0 0 1px rgba(200, 162, 94, 0.32),
-    0 0 0 7px rgba(11, 10, 8, 0.6),
-    0 0 0 8px rgba(200, 162, 94, 0.18),
-    inset 0 0 56px rgba(0, 0, 0, 0.75),
-    inset 0 24px 60px -30px rgba(217, 154, 61, 0.22);
+.text-ivory-muted {
+  color: var(--color-ivory-600);
 }
 
-.alcove.is-lit {
-  box-shadow:
-    0 0 0 1px rgba(232, 205, 147, 0.65),
-    0 0 0 7px rgba(11, 10, 8, 0.6),
-    0 0 0 8px rgba(232, 205, 147, 0.32),
-    inset 0 0 56px rgba(0, 0, 0, 0.6),
-    inset 0 0 90px rgba(217, 154, 61, 0.16),
-    0 0 80px -12px rgba(217, 154, 61, 0.3);
+.bg-chamber {
+  background-color: var(--color-chamber-900);
 }
 
-/* Niche: flat recess for engines, cards, catalog entries */
-.niche {
-  position: relative;
-  background: linear-gradient(180deg, rgba(28, 24, 21, 0.85), rgba(16, 13, 12, 0.9));
-  box-shadow:
-    inset 0 0 0 1px rgba(200, 162, 94, 0.16),
-    inset 0 2px 8px rgba(0, 0, 0, 0.6);
-  transition: box-shadow 420ms var(--ease-mehfil), transform 420ms var(--ease-mehfil);
+.bg-velvet {
+  background-color: var(--color-velvet-900);
 }
 
-.niche:hover {
-  box-shadow:
-    inset 0 0 0 1px rgba(232, 205, 147, 0.42),
-    inset 0 2px 8px rgba(0, 0, 0, 0.5),
-    0 0 32px -10px rgba(217, 154, 61, 0.35);
-  transform: translateY(-2px);
+.border-gilt {
+  border: 1px solid var(--color-gilt-600);
 }
 
-/* Brass plaque button */
+.border-gilt-inner {
+  box-shadow: inset 0 0 0 1px rgba(200, 162, 94, 0.28);
+}
+
+/* Plaque button — brass relief, solid colors */
 .plaque {
   position: relative;
   font-family: var(--font-display);
-  letter-spacing: 0.14em;
-  background:
-    linear-gradient(180deg, rgba(232, 205, 147, 0.16) 0%, rgba(138, 106, 69, 0.08) 100%),
-    var(--color-chamber-800);
-  color: var(--color-gilt-200);
-  box-shadow:
-    0 0 0 1px rgba(200, 162, 94, 0.55),
-    inset 0 1px 0 rgba(232, 205, 147, 0.35),
-    inset 0 -2px 6px rgba(0, 0, 0, 0.5),
-    var(--shadow-plaque);
-  transition: all 380ms var(--ease-mehfil);
-}
-
-.plaque:hover {
-  color: var(--color-gilt-100);
-  box-shadow:
-    0 0 0 1px rgba(232, 205, 147, 0.85),
-    inset 0 1px 0 rgba(242, 224, 182, 0.5),
-    inset 0 -2px 6px rgba(0, 0, 0, 0.45),
-    0 0 44px -8px rgba(217, 154, 61, 0.5),
-    var(--shadow-plaque);
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  border: 1px solid var(--color-gilt-600);
+  border-radius: var(--radius-sm);
+  transition: all 300ms var(--ease-mehfil);
+  cursor: pointer;
 }
 
 .plaque-primary {
-  background:
-    linear-gradient(180deg, var(--color-gilt-400) 0%, var(--color-gilt-500) 55%, var(--color-gilt-600) 100%);
+  background: var(--color-gilt-400);
   color: #1f1409;
-  box-shadow:
-    0 0 0 1px rgba(242, 224, 182, 0.7),
-    inset 0 1px 0 rgba(255, 244, 214, 0.75),
-    inset 0 -3px 8px rgba(90, 58, 20, 0.55),
-    0 12px 30px -12px rgba(217, 154, 61, 0.55);
+  box-shadow: inset 0 1px 0 rgba(255, 244, 214, 0.8), 0 10px 24px -12px rgba(217, 154, 61, 0.4);
   text-shadow: 0 1px 0 rgba(255, 248, 224, 0.3);
 }
 
 .plaque-primary:hover {
-  background:
-    linear-gradient(180deg, var(--color-gilt-300) 0%, var(--color-gilt-400) 55%, var(--color-gilt-500) 100%);
-  box-shadow:
-    0 0 0 1px rgba(242, 224, 182, 0.9),
-    inset 0 1px 0 rgba(255, 248, 224, 0.9),
-    inset 0 -3px 8px rgba(90, 58, 20, 0.5),
-    0 0 60px -6px rgba(217, 154, 61, 0.65);
+  background: var(--color-gilt-300);
+  box-shadow: inset 0 1px 0 rgba(255, 248, 224, 0.9), 0 0 40px -8px rgba(217, 154, 61, 0.35);
 }
 
-/* Urdu typography: Nastaliq needs generous leading and no letter-spacing. */
+.plaque-ghost {
+  background: transparent;
+  color: var(--color-gilt-400);
+  box-shadow: inset 0 0 0 1px rgba(200, 162, 94, 0.35);
+}
+
+.plaque-ghost:hover {
+  background: rgba(200, 162, 94, 0.1);
+  color: var(--color-gilt-200);
+}
+
+.plaque:disabled {
+  opacity: 0.45;
+  cursor: not-allowed;
+}
+
+/* Urdu typography */
 .urdu-text {
   font-family: var(--font-urdu);
   direction: rtl;
   unicode-bidi: isolate;
-  line-height: 2.15;
+  line-height: 2.2;
   letter-spacing: 0;
   font-feature-settings: "kern" 1;
 }
@@ -224,12 +173,6 @@ body {
 .urdu-inline {
   font-family: var(--font-urdu);
   unicode-bidi: isolate;
-}
-
-/* Research records are set in typed courier on the dossier side of the page. */
-.record-text {
-  font-family: var(--font-record);
-  letter-spacing: 0.02em;
 }
 
 .font-display {
@@ -240,11 +183,15 @@ body {
   font-family: var(--font-body);
 }
 
-/* Focus rings: brass, never blue. */
+.font-record {
+  font-family: var(--font-record);
+}
+
+/* Focus rings — brass, never blue */
 :focus-visible {
   outline: 2px solid var(--color-gilt-300);
   outline-offset: 3px;
-  border-radius: 2px;
+  border-radius: var(--radius-sm);
 }
 
 ::selection {
@@ -252,7 +199,7 @@ body {
   color: var(--color-ivory-200);
 }
 
-/* Scrollbar: bronze on black */
+/* Scrollbar */
 ::-webkit-scrollbar {
   width: 10px;
   height: 10px;
@@ -267,51 +214,116 @@ body {
 }
 
 @media (prefers-reduced-motion: reduce) {
-  html {
-    scroll-behavior: auto;
-  }
-  *,
-  *::before,
-  *::after {
+  html { scroll-behavior: auto; }
+  *, *::before, *::after {
     animation-duration: 0.01ms !important;
     animation-iteration-count: 1 !important;
     transition-duration: 0.01ms !important;
   }
 }
 
-/* Range inputs (intensity) dressed as the chamber, not a browser widget */
+/* Range input — dressed as chamber */
 input[type="range"].intensity-slider {
   -webkit-appearance: none;
   appearance: none;
-  height: 26px;
-  background: transparent;
+  height: 6px;
+  background: var(--color-chamber-700);
+  border: 1px solid var(--color-gilt-600);
+  border-radius: var(--radius-sm);
   cursor: pointer;
 }
 input[type="range"].intensity-slider::-webkit-slider-runnable-track {
-  height: 3px;
-  background: linear-gradient(90deg, var(--color-gilt-600), var(--color-lamp-500));
-  border-radius: 2px;
+  background: transparent;
+  border: none;
 }
 input[type="range"].intensity-slider::-webkit-slider-thumb {
   -webkit-appearance: none;
-  appearance: none;
-  margin-top: -9px;
-  width: 21px;
-  height: 21px;
-  border-radius: 9999px;
-  background: radial-gradient(circle at 34% 30%, var(--color-gilt-100), var(--color-gilt-500) 60%, var(--color-gilt-600));
-  box-shadow: 0 0 0 1px rgba(242, 224, 182, 0.8), 0 0 18px rgba(217, 154, 61, 0.55);
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background: var(--color-gilt-200);
+  border: 1px solid var(--color-gilt-600);
+  box-shadow: 0 0 0 1px rgba(255, 248, 224, 0.8);
+  cursor: pointer;
 }
-input[type="range"].intensity-slider::-moz-range-track {
-  height: 3px;
-  background: linear-gradient(90deg, var(--color-gilt-600), var(--color-lamp-500));
-  border-radius: 2px;
+
+/* Input fields */
+input, textarea, select {
+  background: var(--color-chamber-800);
+  border: 1px solid var(--color-gilt-600);
+  border-radius: var(--radius-sm);
+  color: var(--color-ivory-400);
+  padding: 8px 12px;
+  font-family: var(--font-body);
+  font-size: 14px;
 }
-input[type="range"].intensity-slider::-moz-range-thumb {
-  width: 21px;
-  height: 21px;
-  border: none;
-  border-radius: 9999px;
-  background: radial-gradient(circle at 34% 30%, var(--color-gilt-100), var(--color-gilt-500) 60%, var(--color-gilt-600));
-  box-shadow: 0 0 0 1px rgba(242, 224, 182, 0.8), 0 0 18px rgba(217, 154, 61, 0.55);
+input::placeholder {
+  color: var(--color-ivory-600);
+}
+input:focus, textarea:focus, select:focus {
+  outline: 2px solid var(--color-gilt-300);
+  outline-offset: 2px;
+  border-color: transparent;
+}
+
+/* Section headings — no kickers/eyebrows */
+.section-head {
+  font-family: var(--font-display);
+  font-size: 20px;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--color-gilt-400);
+  margin-bottom: 1.5rem;
+}
+
+/* Poem card / alcove — gilt-rimmed recess, no glow */
+.poem-alcove {
+  position: relative;
+  border: 1px solid var(--color-gilt-600);
+  border-radius: var(--radius-md);
+  background: var(--color-chamber-800);
+  box-shadow: inset 0 0 0 1px rgba(200, 162, 94, 0.15);
+}
+
+/* Emotion chip */
+.emotion-chip {
+  border: 1px solid var(--color-gilt-600);
+  border-radius: var(--radius-sm);
+  padding: 4px 12px;
+  font-family: var(--font-display);
+  font-size: 12px;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--color-ivory-400);
+  background: transparent;
+}
+.emotion-chip.selected {
+  background: var(--color-gilt-400);
+  color: #1f1409;
+}
+
+/* Mirror disc — intensity */
+.intensity-disc {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  border: 1px solid var(--color-gilt-600);
+  background: var(--color-chamber-700);
+  cursor: pointer;
+}
+.intensity-disc.active {
+  background: var(--color-gilt-200);
+  box-shadow: 0 0 0 1px rgba(255, 248, 224, 0.8);
+}
+
+/* Niches */
+.niche {
+  border: 1px solid var(--color-gilt-600);
+  border-radius: var(--radius-md);
+  background: var(--color-chamber-800);
+  box-shadow: inset 0 0 0 1px rgba(200, 162, 94, 0.15);
+  transition: box-shadow 300ms var(--ease-mehfil);
+}
+.niche:hover {
+  box-shadow: inset 0 0 0 1px rgba(232, 205, 147, 0.4);
 }

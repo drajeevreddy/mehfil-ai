@@ -15,10 +15,8 @@ export function ModeStrip() {
   return (
     <section className="relative mx-auto w-full max-w-[1600px] px-4 py-16 sm:px-6 lg:px-10" aria-label="Emotional modes">
       <div className="mx-auto max-w-3xl text-center">
-        <h2 className="font-display text-[22px] tracking-[0.14em] text-gilt-200">
-          CHOOSE THE ROOM YOU ARE IN TONIGHT
-        </h2>
-        <p className="font-body mt-4 text-[16px] text-ivory-400">
+        <h2 className="section-head">CHOOSE THE ROOM YOU ARE IN TONIGHT</h2>
+        <p className="font-body text-[16px] text-ivory-400">
           Each mode shifts the whole mehfil — register, imagery, direction
           of thought. All of them run through the three engines.
         </p>
@@ -28,7 +26,7 @@ export function ModeStrip() {
           <Link
             key={m.mode}
             href={`/studio?mode=${m.mode}`}
-            className="niche group block rounded-[3px] px-5 py-6 text-center"
+            className="niche group block rounded-sm px-5 py-6 text-center"
           >
             <span className="font-display block text-[13px] tracking-[0.18em] text-gilt-200 group-hover:text-gilt-100">
               {m.label.toUpperCase()}

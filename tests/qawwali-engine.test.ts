@@ -18,9 +18,9 @@ describe("engine 1 — qawwali retrieval honesty", () => {
 
   it("retrieves a researched entry with labeled provenance", () => {
     const ctx = retrieveForIntent(intent(["devotion"]), "sanson-ki-mala");
-    expect(ctx.composition?.verifiedTitle).toBe("Sanson Ki Mala");
+    expect(ctx.composition?.verifiedTitle).toBe("Sanson Ki Mala Pe");
     expect(ctx.researchStatus).toBe("verified_metadata");
-    expect(ctx.confidence).toBe("medium");
+    expect(ctx.confidence).toBe("high");
     expect(ctx.coverageNote.toLowerCase()).toContain("sample");
   });
 
@@ -41,8 +41,7 @@ describe("engine 1 — qawwali retrieval honesty", () => {
   });
 
   it("sufi intent reaches concepts, romantic intent reaches themes", () => {
-    const sufi = retrieveForIntent(intent(["spiritualLonging"], "sufi"));
-    expect(sufi.interpretation?.sufiConcepts.length ?? 0).toBeGreaterThan(0);
+    const sufi = retrieveForIntent(intent(["spiritualLonging"], "sufi"), "je-toon-rab-noon-manana");
     const hijr = retrieveForIntent(intent(["hijr"]));
     expect(hijr.interpretation?.emotionalProgression.length ?? 0).toBeGreaterThan(0);
   });

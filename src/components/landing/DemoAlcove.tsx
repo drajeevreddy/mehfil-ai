@@ -1,12 +1,10 @@
 "use client";
 
 import { useEffect, useRef, useState } from "react";
-import Link from "next/link";
 import { motion, useReducedMotion, AnimatePresence } from "framer-motion";
 import type { GeneratedShayari, EmotionKey } from "@/lib/types";
 import { postGenerate } from "@/lib/mehfil-client";
 import { EMOTION_ENTRY } from "@/engines/emotion/lexicon";
-import { MirrorMosaic } from "@/components/chamber/MirrorMosaic";
 import { cn } from "@/lib/utils";
 
 const ROTATIONS: { emotions: EmotionKey[]; intensity: number }[] = [
@@ -17,11 +15,6 @@ const ROTATIONS: { emotions: EmotionKey[]; intensity: number }[] = [
   { emotions: ["longing", "madness"], intensity: 5 },
 ];
 
-/**
- * The lit alcove: live demo shers composed by the local core engine, rotating
- * through emotion combinations. Demonstrates the product at work in the first
- * viewport; every sher is labeled demo and carries its source combination.
- */
 export function DemoAlcove({ className }: { className?: string }) {
   const reduce = useReducedMotion();
   const idx = useRef(0);
@@ -58,17 +51,13 @@ export function DemoAlcove({ className }: { className?: string }) {
 
   const emo = shayari?.emotionIntent.primary;
   const emoWord = emo ? EMOTION_ENTRY[emo]?.word : null;
+  const emoSecond = shayari?.emotionIntent.secondary[0] ? EMOTION_ENTRY[shayari.emotionIntent.secondary[0]]?.word.roman : null;
 
   return (
     <section
-      className={cn("alcove relative flex min-h-[420px] flex-col items-center justify-center overflow-hidden px-6 py-10 text-center sm:min-h-[520px]", className)}
+      className={cn("poem-alcove relative flex min-h-[420px] flex-col items-center justify-center overflow-hidden px-6 py-10 text-center sm:min-h-[520px]", className)}
       aria-label="A live demo sher composed by the local core engine"
     >
-      {/* lit mosaic ground */}
-      <div className="pointer-events-none absolute inset-0" aria-hidden>
-        <MirrorMosaic className="h-full w-full" seed={29} lit={rolling ? 0.06 : 0.4} />
-      </div>
-
       <AnimatePresence mode="wait">
         {shayari && !rolling && (
           <motion.div
@@ -107,16 +96,15 @@ export function DemoAlcove({ className }: { className?: string }) {
         </div>
       )}
 
-      {/* source line */}
       {shayari && (
         <div className="relative z-10 mt-8 space-y-1.5">
           <div aria-hidden className="gilt-rule mx-auto w-2/3 opacity-70" />
           {emoWord && (
             <p className="record-text text-[11px] tracking-[0.18em] text-gilt-400/90">
-              DEMO · {emoWord.roman.toUpperCase()} + {(shayari.emotionIntent.secondary[0] ? EMOTION_ENTRY[shayari.emotionIntent.secondary[0]]?.word.roman ?? "" : "").toUpperCase()}
+              DEMO · {emoWord.roman.toUpperCase()}{emoSecond ? " + " + emoSecond.toUpperCase() : ""}
             </p>
           )}
-          <p className="font-body text-[13px] italic text-ivory-500">
+          <p className="font-body mt-6 text-[13px] italic text-ivory-500">
             composed here on the spot, the way a chosen feeling becomes poetry
           </p>
           <button
@@ -131,4 +119,3 @@ export function DemoAlcove({ className }: { className?: string }) {
     </section>
   );
 }
-

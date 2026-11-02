@@ -2,8 +2,8 @@ import Link from "next/link";
 
 export function SiteFooter() {
   return (
-    <footer className="relative z-10 mt-24 border-t border-gilt-600/25 bg-chamber-950/85">
-      <div aria-hidden className="gilt-rule opacity-60" />
+    <footer className="relative z-10 mt-24 border-t border-gilt-inner bg-chamber">
+      <div aria-hidden className="gilt-rule-thin opacity-50" />
       <div className="mx-auto grid w-full max-w-7xl gap-10 px-4 py-14 sm:px-6 lg:grid-cols-[1.4fr_1fr_1fr] lg:px-8">
         <div>
           <p className="font-display text-sm tracking-[0.2em] text-gilt-300">MEHFIL AI</p>

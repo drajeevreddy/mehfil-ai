@@ -4,15 +4,14 @@ import { motion, useReducedMotion } from "framer-motion";
 import { useMemo } from "react";
 
 /**
- * Rose-petal drift: a few authored petals crossing the dark. Disabled under
- * prefers-reduced-motion; petals are decorative (aria-hidden) and never
- * intercept pointer events.
+ * Rose-petal drift — subtle, decorative, aria-hidden.
+ * Disabled under prefers-reduced-motion.
  */
 export function Petals() {
   const reduce = useReducedMotion();
   const petals = useMemo(
     () =>
-      Array.from({ length: 12 }, (_, i) => ({
+      Array.from({ length: 8 }, (_, i) => ({
         id: i,
         left: (i * 83) % 100,
         delay: (i * 2.7) % 14,
@@ -36,14 +35,14 @@ export function Petals() {
             top: -20,
             width: p.size,
             height: p.size * 0.62,
-            background: "linear-gradient(145deg, rgba(197,127,134,0.55), rgba(74,18,32,0.65))",
+            background: "linear-gradient(145deg, rgba(181,96,106,0.45), rgba(45,10,20,0.55))",
             filter: "blur(0.4px)",
           }}
           initial={{ y: -30, opacity: 0 }}
           animate={{
             y: ["0vh", "110vh"],
             x: [0, p.drift, p.drift * -0.5],
-            opacity: [0, 0.7, 0.7, 0],
+            opacity: [0, 0.5, 0.5, 0],
             rotate: [0, 160, 340],
           }}
           transition={{

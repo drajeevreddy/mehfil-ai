@@ -19,17 +19,16 @@ export function SiteHeader() {
   const pathname = usePathname();
   const [open, setOpen] = useState(false);
 
-  // close the drawer whenever the route changes
   useEffect(() => setOpen(false), [pathname]);
 
   return (
-    <header className="relative z-20 border-b border-gilt-600/40 bg-chamber-900/95">
+    <header className="relative z-20 border-b border-gilt-inner bg-chamber/95">
       <div className="mx-auto flex h-16 w-full max-w-7xl items-center justify-between px-4 sm:px-6 lg:px-8">
         <Link href="/" className="group flex items-baseline gap-3" aria-label="MEHFIL AI — home">
-          <span className="font-display text-lg tracking-[0.22em] text-gilt-200 transition-colors group-hover:text-gilt-100 sm:text-xl">
+          <span className="font-display text-lg tracking-[0.22em] text-gilt-200 sm:text-xl">
             MEHFIL
           </span>
-          <span className="font-display text-[11px] tracking-[0.34em] text-gilt-600/90 sm:text-xs">AI</span>
+          <span className="font-display text-[11px] tracking-[0.34em] text-gilt-600 sm:text-xs">AI</span>
         </Link>
 
         <nav className="hidden items-center gap-1 lg:flex" aria-label="Primary">
@@ -61,25 +60,6 @@ export function SiteHeader() {
           {open ? <X size={22} aria-hidden /> : <Menu size={22} aria-hidden />}
         </button>
       </div>
-
-      <div aria-hidden className="gilt-rule h-px w-full opacity-70" />
-
-      {open && (
-        <div id="chamber-drawer" className="border-t border-gilt-600/20 bg-chamber-950/95 lg:hidden">
-          <nav className="flex flex-col px-4 py-3" aria-label="Mobile">
-            {LINKS.map((l) => (
-              <Link
-                key={l.href}
-                href={l.href}
-                className="border-b border-gilt-600/15 py-3 font-display text-sm tracking-[0.16em] text-ivory-300 last:border-b-0 hover:text-gilt-300"
-              >
-                {l.label}
-                <span className="ml-3 font-body text-xs italic text-ivory-600">{l.sub}</span>
-              </Link>
-            ))}
-          </nav>
-        </div>
-      )}
     </header>
   );
 }
